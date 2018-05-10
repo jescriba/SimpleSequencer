@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class SamplesViewController: UIViewController {
+    init() {
+        super.init(nibName: "SamplesViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

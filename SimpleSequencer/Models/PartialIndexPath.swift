@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+protocol GenericIndexPath {}
+
+struct PartialIndexPath: GenericIndexPath {
+    let row: Double
+    let section: Int
+    
+    init(row: Double, section: Int) {
+        self.row = row
+        self.section = section
+    }
+}
+
+extension IndexPath: GenericIndexPath {}

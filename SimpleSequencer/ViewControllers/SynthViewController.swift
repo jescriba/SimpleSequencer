@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class SynthViewController: UIViewController {
+    init() {
+        super.init(nibName: "SynthViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

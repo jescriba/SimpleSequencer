@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import UIKit
+
+class SequencerViewController: UIViewController {
+    init() {
+        super.init(nibName: "SequencerViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        AudioEngine.shared.delegate = (view as! SequencerView)
+    }
+}

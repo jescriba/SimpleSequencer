@@ -7,21 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25909C598272974FC64A5CB4 /* Pods_SimpleSequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */; };
 		425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A1420956DE200F486DB /* AppDelegate.swift */; };
-		425C7A1720956DE200F486DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A1620956DE200F486DB /* ViewController.swift */; };
 		425C7A1A20956DE200F486DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1820956DE200F486DB /* Main.storyboard */; };
 		425C7A1C20956DE400F486DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1B20956DE400F486DB /* Assets.xcassets */; };
 		425C7A1F20956DE400F486DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1D20956DE400F486DB /* LaunchScreen.storyboard */; };
+		425C7A2A20956F9700F486DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A2920956F9700F486DB /* Extensions.swift */; };
+		425C7A2C2095709000F486DB /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A2B2095709000F486DB /* ContainerViewController.swift */; };
+		425C7A2E209572A800F486DB /* SequencerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A2D209572A800F486DB /* SequencerViewController.swift */; };
+		425C7A30209572D500F486DB /* SequencerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A2F209572D500F486DB /* SequencerView.swift */; };
+		425C7A32209F6E3300F486DB /* SequencerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A31209F6E3300F486DB /* SequencerView.xib */; };
+		425C7A34209F730000F486DB /* SequencerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A33209F730000F486DB /* SequencerViewController.xib */; };
+		425C7A36209F7F9A00F486DB /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A35209F7F9A00F486DB /* SynthViewController.swift */; };
+		425C7A38209F7FA300F486DB /* SamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A37209F7FA300F486DB /* SamplesViewController.swift */; };
+		425C7A3A209F7FAB00F486DB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A39209F7FAB00F486DB /* SettingsViewController.swift */; };
+		425C7A3C209F7FB400F486DB /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A3B209F7FB400F486DB /* HelpViewController.swift */; };
+		425C7A3E209FA08000F486DB /* SynthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A3D209FA08000F486DB /* SynthViewController.xib */; };
+		425C7A40209FA09000F486DB /* SamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A3F209FA09000F486DB /* SamplesViewController.xib */; };
+		425C7A42209FA09F00F486DB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A41209FA09F00F486DB /* SettingsViewController.xib */; };
+		425C7A44209FA0AA00F486DB /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A43209FA0AA00F486DB /* HelpViewController.xib */; };
+		42DAE591209FA62200E525DE /* hamburger.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE590209FA62200E525DE /* hamburger.svg */; };
+		42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE593209FA7A600E525DE /* AudioEngine.swift */; };
+		42DAE598209FE05800E525DE /* stop.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE597209FE05800E525DE /* stop.svg */; };
+		42DAE59C209FEFFF00E525DE /* play.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE59B209FEFFF00E525DE /* play.svg */; };
+		42DAE59E209FF1D900E525DE /* TempoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE59D209FF1D900E525DE /* TempoSlider.swift */; };
+		42DAE5A0209FF1E300E525DE /* TempoSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE59F209FF1E300E525DE /* TempoSlider.xib */; };
+		42DAE5A2209FF1FA00E525DE /* MeasureMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */; };
+		42DAE5A4209FF20B00E525DE /* MeasureMeter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */; };
+		42DAE5A6209FFE3C00E525DE /* SequencerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5A5209FFE3C00E525DE /* SequencerCell.swift */; };
+		42DAE5A8209FFE4B00E525DE /* SequencerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE5A7209FFE4B00E525DE /* SequencerCell.xib */; };
+		42DAE5AA20A3D01400E525DE /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5A920A3D01400E525DE /* Sequencer.swift */; };
+		42DAE5AC20A3D17500E525DE /* SequenceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5AB20A3D17500E525DE /* SequenceEvent.swift */; };
+		42DAE5AE20A3D98500E525DE /* PartialIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5AD20A3D98500E525DE /* PartialIndexPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		425C7A1120956DE200F486DB /* SimpleSequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425C7A1420956DE200F486DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		425C7A1620956DE200F486DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		425C7A1920956DE200F486DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		425C7A1B20956DE400F486DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425C7A1E20956DE400F486DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425C7A2020956DE400F486DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425C7A2920956F9700F486DB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		425C7A2B2095709000F486DB /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		425C7A2D209572A800F486DB /* SequencerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerViewController.swift; sourceTree = "<group>"; };
+		425C7A2F209572D500F486DB /* SequencerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerView.swift; sourceTree = "<group>"; };
+		425C7A31209F6E3300F486DB /* SequencerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SequencerView.xib; sourceTree = "<group>"; };
+		425C7A33209F730000F486DB /* SequencerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SequencerViewController.xib; sourceTree = "<group>"; };
+		425C7A35209F7F9A00F486DB /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
+		425C7A37209F7FA300F486DB /* SamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesViewController.swift; sourceTree = "<group>"; };
+		425C7A39209F7FAB00F486DB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		425C7A3B209F7FB400F486DB /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		425C7A3D209FA08000F486DB /* SynthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynthViewController.xib; sourceTree = "<group>"; };
+		425C7A3F209FA09000F486DB /* SamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SamplesViewController.xib; sourceTree = "<group>"; };
+		425C7A41209FA09F00F486DB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		425C7A43209FA0AA00F486DB /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		42DAE590209FA62200E525DE /* hamburger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hamburger.svg; sourceTree = "<group>"; };
+		42DAE593209FA7A600E525DE /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		42DAE597209FE05800E525DE /* stop.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop.svg; sourceTree = "<group>"; };
+		42DAE59B209FEFFF00E525DE /* play.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = play.svg; sourceTree = "<group>"; };
+		42DAE59D209FF1D900E525DE /* TempoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoSlider.swift; sourceTree = "<group>"; };
+		42DAE59F209FF1E300E525DE /* TempoSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempoSlider.xib; sourceTree = "<group>"; };
+		42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureMeter.swift; sourceTree = "<group>"; };
+		42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureMeter.xib; sourceTree = "<group>"; };
+		42DAE5A5209FFE3C00E525DE /* SequencerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerCell.swift; sourceTree = "<group>"; };
+		42DAE5A7209FFE4B00E525DE /* SequencerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SequencerCell.xib; sourceTree = "<group>"; };
+		42DAE5A920A3D01400E525DE /* Sequencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencer.swift; sourceTree = "<group>"; };
+		42DAE5AB20A3D17500E525DE /* SequenceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceEvent.swift; sourceTree = "<group>"; };
+		42DAE5AD20A3D98500E525DE /* PartialIndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialIndexPath.swift; sourceTree = "<group>"; };
+		696CBCF58873B4A8160683D5 /* Pods-SimpleSequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSequencer/Pods-SimpleSequencer.debug.xcconfig"; sourceTree = "<group>"; };
+		7A258C1447FA70D2EA8C8C80 /* Pods-SimpleSequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSequencer/Pods-SimpleSequencer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25909C598272974FC64A5CB4 /* Pods_SimpleSequencer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +97,8 @@
 			children = (
 				425C7A1320956DE200F486DB /* SimpleSequencer */,
 				425C7A1220956DE200F486DB /* Products */,
+				5EBC19AB2352A762870F0904 /* Pods */,
+				69A7612CB8194585BCC7D488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,97 @@
 		425C7A1320956DE200F486DB /* SimpleSequencer */ = {
 			isa = PBXGroup;
 			children = (
+				42DAE592209FA79700E525DE /* Models */,
+				42DAE58F209FA5FC00E525DE /* Assets */,
+				425C7A2820956F8D00F486DB /* Helpers */,
+				425C7A2720956E8000F486DB /* Views */,
+				425C7A2620956E7200F486DB /* ViewControllers */,
 				425C7A1420956DE200F486DB /* AppDelegate.swift */,
-				425C7A1620956DE200F486DB /* ViewController.swift */,
 				425C7A1820956DE200F486DB /* Main.storyboard */,
 				425C7A1B20956DE400F486DB /* Assets.xcassets */,
 				425C7A1D20956DE400F486DB /* LaunchScreen.storyboard */,
 				425C7A2020956DE400F486DB /* Info.plist */,
 			);
 			path = SimpleSequencer;
+			sourceTree = "<group>";
+		};
+		425C7A2620956E7200F486DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				425C7A2B2095709000F486DB /* ContainerViewController.swift */,
+				425C7A2D209572A800F486DB /* SequencerViewController.swift */,
+				425C7A35209F7F9A00F486DB /* SynthViewController.swift */,
+				425C7A37209F7FA300F486DB /* SamplesViewController.swift */,
+				425C7A39209F7FAB00F486DB /* SettingsViewController.swift */,
+				425C7A3B209F7FB400F486DB /* HelpViewController.swift */,
+				425C7A33209F730000F486DB /* SequencerViewController.xib */,
+				425C7A3D209FA08000F486DB /* SynthViewController.xib */,
+				425C7A3F209FA09000F486DB /* SamplesViewController.xib */,
+				425C7A41209FA09F00F486DB /* SettingsViewController.xib */,
+				425C7A43209FA0AA00F486DB /* HelpViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		425C7A2720956E8000F486DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42DAE5A5209FFE3C00E525DE /* SequencerCell.swift */,
+				42DAE5A7209FFE4B00E525DE /* SequencerCell.xib */,
+				425C7A2F209572D500F486DB /* SequencerView.swift */,
+				425C7A31209F6E3300F486DB /* SequencerView.xib */,
+				42DAE59D209FF1D900E525DE /* TempoSlider.swift */,
+				42DAE59F209FF1E300E525DE /* TempoSlider.xib */,
+				42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */,
+				42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		425C7A2820956F8D00F486DB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				425C7A2920956F9700F486DB /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		42DAE58F209FA5FC00E525DE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				42DAE590209FA62200E525DE /* hamburger.svg */,
+				42DAE59B209FEFFF00E525DE /* play.svg */,
+				42DAE597209FE05800E525DE /* stop.svg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		42DAE592209FA79700E525DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42DAE593209FA7A600E525DE /* AudioEngine.swift */,
+				42DAE5A920A3D01400E525DE /* Sequencer.swift */,
+				42DAE5AB20A3D17500E525DE /* SequenceEvent.swift */,
+				42DAE5AD20A3D98500E525DE /* PartialIndexPath.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5EBC19AB2352A762870F0904 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				696CBCF58873B4A8160683D5 /* Pods-SimpleSequencer.debug.xcconfig */,
+				7A258C1447FA70D2EA8C8C80 /* Pods-SimpleSequencer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69A7612CB8194585BCC7D488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 425C7A2320956DE400F486DB /* Build configuration list for PBXNativeTarget "SimpleSequencer" */;
 			buildPhases = (
+				AD5143A04DE23BAAA2927FF6 /* [CP] Check Pods Manifest.lock */,
 				425C7A0D20956DE200F486DB /* Sources */,
 				425C7A0E20956DE200F486DB /* Frameworks */,
 				425C7A0F20956DE200F486DB /* Resources */,
+				6DA03F21412C496AB23812CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +266,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DAE5A0209FF1E300E525DE /* TempoSlider.xib in Resources */,
+				425C7A32209F6E3300F486DB /* SequencerView.xib in Resources */,
 				425C7A1F20956DE400F486DB /* LaunchScreen.storyboard in Resources */,
+				425C7A34209F730000F486DB /* SequencerViewController.xib in Resources */,
+				425C7A42209FA09F00F486DB /* SettingsViewController.xib in Resources */,
+				42DAE5A8209FFE4B00E525DE /* SequencerCell.xib in Resources */,
+				42DAE59C209FEFFF00E525DE /* play.svg in Resources */,
+				42DAE598209FE05800E525DE /* stop.svg in Resources */,
+				425C7A40209FA09000F486DB /* SamplesViewController.xib in Resources */,
+				425C7A44209FA0AA00F486DB /* HelpViewController.xib in Resources */,
 				425C7A1C20956DE400F486DB /* Assets.xcassets in Resources */,
 				425C7A1A20956DE200F486DB /* Main.storyboard in Resources */,
+				42DAE591209FA62200E525DE /* hamburger.svg in Resources */,
+				42DAE5A4209FF20B00E525DE /* MeasureMeter.xib in Resources */,
+				425C7A3E209FA08000F486DB /* SynthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DA03F21412C496AB23812CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleSequencer/Pods-SimpleSequencer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleSequencer/Pods-SimpleSequencer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5143A04DE23BAAA2927FF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleSequencer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		425C7A0D20956DE200F486DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				425C7A1720956DE200F486DB /* ViewController.swift in Sources */,
+				42DAE5A6209FFE3C00E525DE /* SequencerCell.swift in Sources */,
+				425C7A30209572D500F486DB /* SequencerView.swift in Sources */,
+				425C7A2A20956F9700F486DB /* Extensions.swift in Sources */,
+				42DAE5AE20A3D98500E525DE /* PartialIndexPath.swift in Sources */,
+				42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */,
+				425C7A2C2095709000F486DB /* ContainerViewController.swift in Sources */,
+				42DAE5AC20A3D17500E525DE /* SequenceEvent.swift in Sources */,
+				42DAE5A2209FF1FA00E525DE /* MeasureMeter.swift in Sources */,
+				425C7A36209F7F9A00F486DB /* SynthViewController.swift in Sources */,
+				42DAE59E209FF1D900E525DE /* TempoSlider.swift in Sources */,
+				425C7A3C209F7FB400F486DB /* HelpViewController.swift in Sources */,
+				42DAE5AA20A3D01400E525DE /* Sequencer.swift in Sources */,
 				425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */,
+				425C7A38209F7FA300F486DB /* SamplesViewController.swift in Sources */,
+				425C7A2E209572A800F486DB /* SequencerViewController.swift in Sources */,
+				425C7A3A209F7FAB00F486DB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +489,7 @@
 		};
 		425C7A2420956DE400F486DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696CBCF58873B4A8160683D5 /* Pods-SimpleSequencer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +508,7 @@
 		};
 		425C7A2520956DE400F486DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A258C1447FA70D2EA8C8C80 /* Pods-SimpleSequencer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
