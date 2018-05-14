@@ -16,10 +16,11 @@ extension UIColor {
     static let purple = UIColor(red:0.55, green:0.40, blue:0.63, alpha:1.0) // #8B66A0
     static let solidPurple = UIColor(red:0.35, green:0.09, blue:0.78, alpha:1.0) // #5918C7
     static let darkPurple = UIColor(red:0.18, green:0.03, blue:0.26, alpha:1.0) // #2E0743
-    static let shadedPruple = UIColor(red:0.35, green:0.16, blue:0.45, alpha:1.0) // #582A72
+    static let shadedPurple = UIColor(red:0.35, green:0.16, blue:0.45, alpha:1.0) // #582A72
     static let burgundy = UIColor(red:0.40, green:0.02, blue:0.02, alpha:1.0) // #650505
     static let customGreen = UIColor(red:0.24, green:0.90, blue:0.26, alpha:1.0) // #3CE542
     static let customRed = UIColor(red:1.00, green:0.25, blue:0.25, alpha:1.0) // #ff4040
+    static let customOrange = UIColor(red:1.00, green:0.60, blue:0.18, alpha:1.0) // #FF982F
     
     // Update these colors
     static let keyOn = UIColor(red:0.41, green:0.50, blue:0.97, alpha:1.0)

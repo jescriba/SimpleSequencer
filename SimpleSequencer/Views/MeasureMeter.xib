@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,13 +10,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeasureMeter" customModule="SimpleSequencer" customModuleProvider="target">
+            <connections>
+                <outlet property="playheadCenterConstraint" destination="4in-5Y-D2c" id="UKH-dd-M5P"/>
+                <outlet property="playheadView" destination="LMW-r1-yoZ" id="e25-3k-58c"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-r1-yoZ">
+                    <rect key="frame" x="326" y="0.0" width="15" height="375"/>
+                    <color key="backgroundColor" red="0.31764705882352939" green="0.015686274509803921" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="RSQ-7j-Dg8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.75294117647058822" green="0.46666666666666667" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LMW-r1-yoZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4in-5Y-D2c"/>
+                <constraint firstItem="LMW-r1-yoZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JhM-gr-TCb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LMW-r1-yoZ" secondAttribute="bottom" id="ZEL-EI-xOY"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

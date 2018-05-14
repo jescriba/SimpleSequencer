@@ -26,6 +26,7 @@
 		425C7A40209FA09000F486DB /* SamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A3F209FA09000F486DB /* SamplesViewController.xib */; };
 		425C7A42209FA09F00F486DB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A41209FA09F00F486DB /* SettingsViewController.xib */; };
 		425C7A44209FA0AA00F486DB /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A43209FA0AA00F486DB /* HelpViewController.xib */; };
+		429B528420A911C90032347A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B528320A911C90032347A /* Note.swift */; };
 		42DAE591209FA62200E525DE /* hamburger.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE590209FA62200E525DE /* hamburger.svg */; };
 		42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE593209FA7A600E525DE /* AudioEngine.swift */; };
 		42DAE598209FE05800E525DE /* stop.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE597209FE05800E525DE /* stop.svg */; };
@@ -63,6 +64,7 @@
 		425C7A3F209FA09000F486DB /* SamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SamplesViewController.xib; sourceTree = "<group>"; };
 		425C7A41209FA09F00F486DB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		425C7A43209FA0AA00F486DB /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		429B528320A911C90032347A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		42DAE590209FA62200E525DE /* hamburger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hamburger.svg; sourceTree = "<group>"; };
 		42DAE593209FA7A600E525DE /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		42DAE597209FE05800E525DE /* stop.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop.svg; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				42DAE5A920A3D01400E525DE /* Sequencer.swift */,
 				42DAE5AB20A3D17500E525DE /* SequenceEvent.swift */,
 				42DAE5AD20A3D98500E525DE /* PartialIndexPath.swift */,
+				429B528320A911C90032347A /* Note.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				425C7A30209572D500F486DB /* SequencerView.swift in Sources */,
 				425C7A2A20956F9700F486DB /* Extensions.swift in Sources */,
 				42DAE5AE20A3D98500E525DE /* PartialIndexPath.swift in Sources */,
+				429B528420A911C90032347A /* Note.swift in Sources */,
 				42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */,
 				425C7A2C2095709000F486DB /* ContainerViewController.swift in Sources */,
 				42DAE5AC20A3D17500E525DE /* SequenceEvent.swift in Sources */,

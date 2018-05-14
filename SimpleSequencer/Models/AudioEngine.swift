@@ -15,6 +15,8 @@ protocol AudioEngineDelegate {
 }
 
 class AudioEngine: NSObject {
+    static let maxTempo: Double = 200
+    static let minTempo: Double = 40
     static let shared = AudioEngine()
     var delegate: AudioEngineDelegate?
     let mixer = AKMixer()

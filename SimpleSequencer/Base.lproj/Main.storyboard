@@ -42,11 +42,11 @@
                                                     <action selector="didTapMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOh-IT-9gp"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVe-JG-pCS">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVe-JG-pCS" customClass="TempoSlider" customModule="SimpleSequencer" customModuleProvider="target">
                                                 <rect key="frame" x="145.5" y="10" width="211" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw2-3C-lW1" userLabel="tool bar view">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw2-3C-lW1" userLabel="tool bar view" customClass="MeasureMeter" customModule="SimpleSequencer" customModuleProvider="target">
                                                 <rect key="frame" x="376.5" y="10" width="210.5" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>

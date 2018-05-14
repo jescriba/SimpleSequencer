@@ -32,8 +32,7 @@ class Sequencer: AKSequencer {
         tracks[0].setLength(sequenceLength)
         let midi = AudioKit.midi
         midi.openOutput()
-        midi.sendEvent(<#T##event: AKMIDIEvent##AKMIDIEvent#>)
-        tracks[0].setMIDIOutput(<#T##endpoint: MIDIEndpointRef##MIDIEndpointRef#>)
+//        tracks[0].setMIDIOutput((midi.endpoints.first?.value)!)
         // TODO dynamic sequence Length
 //        tracks[SequenceType.kick.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
 //        tracks[SequenceType.kick.rawValue].setLength(sequenceLength)
@@ -58,6 +57,7 @@ class Sequencer: AKSequencer {
     func addSequenceItem(indexPath: IndexPath, stepSize: Float) {
         //let sequenceType = SequenceType(rawValue: indexPath.section)
 //        guard let type = sequenceType else { return }
+        setupTracks()
         let row = indexPath.row
         let position = Double(row) / stepSize
         let duration = Double(1.0) / stepSize

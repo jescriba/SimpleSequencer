@@ -141,10 +141,10 @@ class SequencerView: UIView {
         for i in 0..<collectionView.numberOfSections
         {
             let indexPath = IndexPath(row: index, section: i)
-            guard let cell = collectionView.cellForItem(at: indexPath) else {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? SequencerCell else {
                 continue
             }
-            cell.backgroundColor = .playOn
+            cell.isPlaying = true 
             cell.subviews.filter {
                 $0.accessibilityIdentifier == "FillView"
                 }.forEach {
@@ -161,15 +161,11 @@ class SequencerView: UIView {
         }
         for i in 0..<collectionView.numberOfSections {
             let indexPath = IndexPath(row: rowIndex, section: i)
-            guard let cell = collectionView.cellForItem(at: indexPath) else {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? SequencerCell else {
                 continue
             }
             
-            if cell.tag == 1 {
-                cell.backgroundColor = .sequencerCellSelected
-            } else {
-                cell.backgroundColor = .sequencerCell
-            }
+            cell.isPlaying = false
             cell.subviews.filter {
                 $0.accessibilityIdentifier == "FillView"
                 }.forEach {
@@ -208,17 +204,16 @@ class SequencerView: UIView {
     }
     
     func selectCell(_ indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.tag = 1
-        cell?.backgroundColor = .sequencerCellSelected
+        guard let cell = collectionView.cellForItem(at: indexPath) as? SequencerCell else { return }
+        cell.isEnabled = true
     }
     
     func deselectCell(_ indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.tag = 0
-        cell?.backgroundColor = .sequencerCell
+        guard let cell = collectionView.cellForItem(at: indexPath) as? SequencerCell else { return }
+        cell.isEnabled = false
     }
     
+    // TODO handle partial filling also handling its playstate UI
     func partialFillCell(_ indexPath: PartialIndexPath) {
         let path = IndexPath(row: Int(floor(indexPath.row)), section: indexPath.section)
         guard let cell = collectionView.cellForItem(at: path) else {
@@ -278,26 +273,27 @@ extension SequencerView: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SequencerCell", for: indexPath)
-        cell.backgroundColor = .white
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 2
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SequencerCell", for: indexPath) as! SequencerCell
+        cell.backgroundColor = .whitePurple
+        if indexPath.row > 0 {
+            cell.shouldHideNote = true
+        } else {
+            cell.shouldHideNote = false
+        }
         return cell
     }
 }
 
 extension SequencerView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        if cell?.tag == 1 {
+        let cell = collectionView.cellForItem(at: indexPath) as! SequencerCell
+        if cell.isEnabled {
             // Deselect
-            cell?.backgroundColor = .white
-            cell?.tag = 0
+            cell.isEnabled = false
             AudioEngine.shared.sequencer.removeSequenceItem(indexPath: indexPath, stepSize: Float(timeDivision.numberOfSteps()) / 4.0)
         } else {
             // Select
-            cell?.backgroundColor = .black
-            cell?.tag = 1
+            cell.isEnabled = true
             AudioEngine.shared.sequencer.addSequenceItem(indexPath: indexPath, stepSize: Float(timeDivision.numberOfSteps()) / 4.0)
         }
     }
