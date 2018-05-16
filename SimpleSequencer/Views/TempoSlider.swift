@@ -44,11 +44,9 @@ class TempoSlider: UIView {
     }
 
     private func updateSliderConstraint(_ width: CGFloat? = nil) {
-        guard let w = width else {
-          let w = bounds.width * (AudioEngine.shared.sequencer.tempo - AudioEngine.minTempo) / (AudioEngine.maxTempo - AudioEngine.minTempo)
-        }
+        let w = width ?? bounds.width * CGFloat((AudioEngine.shared.sequencer.tempo - AudioEngine.minTempo) / (AudioEngine.maxTempo - AudioEngine.minTempo))
 
-        secondaryWidthConstraint.constant = w
+        secondaryWidthConstraint.constant = -1 * (bounds.width - w)
         layoutIfNeeded()
     }
 
@@ -56,7 +54,7 @@ class TempoSlider: UIView {
         let translation = sender.location(in: self).x
         guard translation > 0, translation <= bounds.width else { return }
         
-        tempo = Double(translation / bounds.width) * (AudioEngine.maxTempo - AudioEngine.minTempo) + AudioEngine.minTempo
+        let tempo = Double(translation / bounds.width) * (AudioEngine.maxTempo - AudioEngine.minTempo) + AudioEngine.minTempo
         AudioEngine.shared.sequencer.setTempo(tempo)
 
         updateSliderConstraint(translation)

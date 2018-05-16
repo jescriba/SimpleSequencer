@@ -32,11 +32,15 @@ class SequencerCell: UICollectionViewCell {
     }
     var isPlaying: Bool = false {
         didSet {
-            if isPlaying {
-                mainView.backgroundColor = .darkPurple
-            } else {
+            guard isPlaying else {
                 isEnabled = { isEnabled }()
+                return
             }
+            guard isEnabled else {
+                mainView.backgroundColor = .darkPurple
+                return
+            }
+            mainView.backgroundColor = .darkerPurple
         }
     }
     

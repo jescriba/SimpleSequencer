@@ -11,7 +11,7 @@ import UIKit
 
 class MeasureMeter: UIView {
     @IBOutlet weak var playheadView: UIView!
-    @IBOutlet weak var playheadCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var playheadConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,24 +40,23 @@ class MeasureMeter: UIView {
         layer.cornerRadius = 15
         playheadView.layer.cornerRadius = 5
 
-        updatePlayheadCenterConstraint()
+        updatePlayheadConstraint()
     }
 
-    private func updatePlayheadCenterConstraint(withTranslation translation: CGFloat? = nil) {
-        guard let t = translation else {
-            let t = bounds.width * Double(AudioEngine.shared.sequencer.measure) / Double(AudioEngine.shared.sequencer.maxMeasure)
-        }
-
-        playheadCenterConstraint.constant = t
+    private func updatePlayheadConstraint(withTranslation translation: CGFloat? = nil) {
+        let maxPosition = bounds.width - playheadView.bounds.midX
+        let t = translation ?? maxPosition * CGFloat(AudioEngine.shared.sequencer.measure) / CGFloat(AudioEngine.shared.sequencer.maxMeasure)
+        playheadConstraint.constant = t
         layoutIfNeeded()
     }
 
     @IBAction func didPanOnView(_ sender: UIPanGestureRecognizer) {
+        let maxPosition = bounds.width - playheadView.bounds.midX
         let translation = sender.location(in: self).x
-        guard translation > 0, translation <= bounds.width else { return }
-        measure = Int(Double(translation / bounds.width) * AudioEngine.shared.sequencer.maxMeasure)
+        guard translation > 0, translation <= maxPosition else { return }
+        let measure = Double(translation / maxPosition) * AudioEngine.shared.sequencer.maxMeasure
         AudioEngine.shared.sequencer.measure = measure
 
-        updatePlayheadCenterConstraint(withTranslation: translation)
+        updatePlayheadConstraint(withTranslation: translation)
     }
 }

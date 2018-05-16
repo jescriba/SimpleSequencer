@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeasureMeter" customModule="SimpleSequencer" customModuleProvider="target">
             <connections>
-                <outlet property="playheadCenterConstraint" destination="4in-5Y-D2c" id="UKH-dd-M5P"/>
+                <outlet property="playheadConstraint" destination="k71-72-Ond" id="DoY-r7-HbR"/>
                 <outlet property="playheadView" destination="LMW-r1-yoZ" id="e25-3k-58c"/>
             </connections>
         </placeholder>
@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-r1-yoZ">
-                    <rect key="frame" x="326" y="0.0" width="15" height="375"/>
+                    <rect key="frame" x="0.0" y="0.0" width="15" height="375"/>
                     <color key="backgroundColor" red="0.31764705882352939" green="0.015686274509803921" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="15" id="RSQ-7j-Dg8"/>
@@ -30,13 +30,22 @@
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.75294117647058822" green="0.46666666666666667" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="LMW-r1-yoZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4in-5Y-D2c"/>
                 <constraint firstItem="LMW-r1-yoZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JhM-gr-TCb"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LMW-r1-yoZ" secondAttribute="bottom" id="ZEL-EI-xOY"/>
+                <constraint firstItem="LMW-r1-yoZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="k71-72-Ond"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="l2f-8P-1y3" appends="YES" id="fcb-Pz-olW"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="l2f-8P-1y3">
+            <connections>
+                <action selector="didPanOnView:" destination="-1" id="Qlp-uD-YPz"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
 </document>

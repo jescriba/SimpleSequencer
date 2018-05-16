@@ -13,6 +13,8 @@ import AudioKit
 class Sequencer: AKSequencer {
     static let maxTempo: Double = 260
     static let minTempo: Double = 30
+    var maxMeasure: Double = 2.0
+    var measure: Double = 0.5
     private let sequenceLength = AKDuration(beats: 4.0)
     // Needed for managing event sequence state
     var events = [SequenceEvent]()
