@@ -12,14 +12,7 @@ import UIKit
 class TempoSlider: UIView {
     @IBOutlet weak var secondaryWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var secondaryView: UIView!
-    var tempo: Double = AudioEngine.shared.sequencer.tempo {
-        didSet {
-            let ratio = CGFloat(tempo / (AudioEngine.maxTempo - AudioEngine.minTempo))
-            secondaryWidthConstraint.constant = -1 * ratio * bounds.width
-            layoutIfNeeded()
-        }
-    }
-    
+  
     override func awakeFromNib() {
         super.awakeFromNib()
         commonInit()
@@ -46,21 +39,27 @@ class TempoSlider: UIView {
         view.layer.cornerRadius = 15
         layer.cornerRadius = 15
         secondaryView.layer.cornerRadius = 14
-        
-        tempo = AudioEngine.shared.sequencer.tempo
+
+        updateSliderConstraint()
     }
-    
+
+    private func updateSliderConstraint(_ width: CGFloat? = nil) {
+        guard let w = width else {
+          let w = bounds.width * (AudioEngine.shared.sequencer.tempo - AudioEngine.minTempo) / (AudioEngine.maxTempo - AudioEngine.minTempo)
+        }
+
+        secondaryWidthConstraint.constant = w
+        layoutIfNeeded()
+    }
+
     @IBAction func didPanOnView(_ sender: UIPanGestureRecognizer) {
         let translation = sender.location(in: self).x
-        guard translation > 0 else { return }
+        guard translation > 0, translation <= bounds.width else { return }
         
-        if translation <= bounds.width {
-            let possibleTempo = (1.0 - Double(abs(translation) / bounds.width)) * AudioEngine.maxTempo - AudioEngine.minTempo
-            if possibleTempo < AudioEngine.maxTempo && possibleTempo > AudioEngine.minTempo {
-                tempo = possibleTempo
-                AudioEngine.shared.sequencer.setTempo(tempo)
-            }
-        }
+        tempo = Double(translation / bounds.width) * (AudioEngine.maxTempo - AudioEngine.minTempo) + AudioEngine.minTempo
+        AudioEngine.shared.sequencer.setTempo(tempo)
+
+        updateSliderConstraint(translation)
     }
     
 }

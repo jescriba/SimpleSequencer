@@ -39,5 +39,25 @@ class MeasureMeter: UIView {
         view.layer.cornerRadius = 15
         layer.cornerRadius = 15
         playheadView.layer.cornerRadius = 5
+
+        updatePlayheadCenterConstraint()
+    }
+
+    private func updatePlayheadCenterConstraint(withTranslation translation: CGFloat? = nil) {
+        guard let t = translation else {
+            let t = bounds.width * Double(AudioEngine.shared.sequencer.measure) / Double(AudioEngine.shared.sequencer.maxMeasure)
+        }
+
+        playheadCenterConstraint.constant = t
+        layoutIfNeeded()
+    }
+
+    @IBAction func didPanOnView(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.location(in: self).x
+        guard translation > 0, translation <= bounds.width else { return }
+        measure = Int(Double(translation / bounds.width) * AudioEngine.shared.sequencer.maxMeasure)
+        AudioEngine.shared.sequencer.measure = measure
+
+        updatePlayheadCenterConstraint(withTranslation: translation)
     }
 }
