@@ -12,7 +12,7 @@ import UIKit
 class SequencerCell: UICollectionViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var noteLabel: UILabel!
-    var note: Note = Note() {
+    var note: Note = Note(key: "C", octave: 4, velocity: 60) {
       didSet {
         noteLabel.text = note.description()
       }

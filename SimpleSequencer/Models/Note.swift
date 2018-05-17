@@ -14,7 +14,8 @@ struct Note {
     var octave: Int
     var velocity: Int
 
-
+    /**
+        String description of note. i.e. C3, Db4, etc..
     */
     func description() -> String {
         return "\(key)\(octave)"

@@ -281,7 +281,7 @@ extension SequencerView: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SequencerCell", for: indexPath) as! SequencerCell
-        cell.note = notes[indexPath.row]
+        cell.note = notes[indexPath.section]
         cell.backgroundColor = .whitePurple
         if indexPath.row > 0 {
             cell.shouldHideNote = true
