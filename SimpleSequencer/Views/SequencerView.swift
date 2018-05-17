@@ -36,6 +36,13 @@ enum TimeDivision: Int {
 class SequencerView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     fileprivate var timeDivision: TimeDivision = .eighth
+    // Handle which notes are active on screen
+    fileprivate var notes: [Note] = [
+                                      Note(key: "G", octave: 3, velocity: 60),
+                                      Note(key: "B", octave: 3, velocity: 60),
+                                      Note(key: "D", octave: 3, velocity: 60),
+                                      Note(key: "F", octave: 3, velocity: 60)
+                                    ]
     private var shouldUpdateMarker = false
     private var markerIndex = 0 {
         didSet {
@@ -274,6 +281,7 @@ extension SequencerView: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SequencerCell", for: indexPath) as! SequencerCell
+        cell.note = notes[indexPath.row]
         cell.backgroundColor = .whitePurple
         if indexPath.row > 0 {
             cell.shouldHideNote = true

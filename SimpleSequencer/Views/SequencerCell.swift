@@ -12,6 +12,11 @@ import UIKit
 class SequencerCell: UICollectionViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var noteLabel: UILabel!
+    var note: Note = Note() {
+      didSet {
+        noteLabel.text = note.description()
+      }
+    }
     var shouldHideNote: Bool = false {
         didSet {
             if shouldHideNote {
@@ -63,6 +68,7 @@ class SequencerCell: UICollectionViewCell {
         
         shouldHideNote =  { shouldHideNote }()
         isEnabled = { isEnabled }()
+        note = { note }()
     }
     
     func commonInit() {
