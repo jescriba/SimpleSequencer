@@ -325,4 +325,6 @@ extension SequencerView: AudioEngineDelegate {
     func didUpdatePlaying(_ isPlaying: Bool) {
         self.isPlaying = isPlaying
     }
+
+    func didUpdateTempo(_ tempo: Double) {} 
 }

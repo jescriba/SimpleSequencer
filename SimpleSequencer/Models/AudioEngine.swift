@@ -11,6 +11,7 @@ import AudioKit
 import AVFoundation
 
 protocol AudioEngineDelegate {
+    func didUpdateTempo(_ tempo: Double)
     func didUpdatePlaying(_ isPlaying: Bool)
 }
 
@@ -21,6 +22,12 @@ class AudioEngine: NSObject {
     var delegate: AudioEngineDelegate?
     let mixer = AKMixer()
     let sequencer = Sequencer()
+    var tempo: Double = 100 {
+        didSet {
+          delegate?.didUpdateTempo(tempo)
+          sequencer.setTempo(tempo)
+        }
+    }
     var isPlaying = false {
         didSet {
             delegate?.didUpdatePlaying(isPlaying)

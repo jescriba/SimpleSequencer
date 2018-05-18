@@ -23,7 +23,6 @@ class Sequencer: AKSequencer {
         super.init()
         setLength(sequenceLength)
         enableLooping()
-        setTempo(100)
     }
     
     func setupTracks() {

@@ -164,3 +164,11 @@ extension ContainerViewController: UITableViewDelegate {
         didTapMenu(nil)
     }
 }
+
+extension ContainerViewController: AudioEngineDelegate {
+    func didUpdatePlaying(_ isPlaying: Bool) {}
+
+    func didUpdateTempo(_ tempo: Double) {
+        tempoLabel.text = String("%.1d", tempo)
+    }
+}
