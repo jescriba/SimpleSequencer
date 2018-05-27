@@ -19,18 +19,18 @@ class AudioEngine: NSObject {
     static let maxTempo: Double = 200
     static let minTempo: Double = 40
     static let shared = AudioEngine()
-    var delegate: AudioEngineDelegate?
+    var delegates = [AudioEngineDelegate?]()
     let mixer = AKMixer()
     let sequencer = Sequencer()
     var tempo: Double = 100 {
         didSet {
-          delegate?.didUpdateTempo(tempo)
+          delegates.forEach { $0?.didUpdateTempo(tempo) }
           sequencer.setTempo(tempo)
         }
     }
     var isPlaying = false {
         didSet {
-            delegate?.didUpdatePlaying(isPlaying)
+            delegates.forEach { $0?.didUpdatePlaying(isPlaying) }
 
             if isPlaying {
                 sequencer.play()

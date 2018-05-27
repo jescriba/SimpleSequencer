@@ -84,6 +84,8 @@ class ContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        weak var weakSelf  = self
+        AudioEngine.shared.delegates.append(weakSelf)
         menuButton.setImage(UIImage.fromSVG(named: "hamburger"), for: .normal)
         menuTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MenuTableViewCell")
         menuTableView.backgroundColor = .lightPurple
@@ -93,6 +95,7 @@ class ContainerViewController: UIViewController {
         contentBackgroundView.layer.shadowColor = UIColor.black.cgColor
         contentBackgroundView.layer.shadowOpacity = 1
         contentBackgroundView.layer.shadowRadius = 2
+        tempoLabel.adjustsFontSizeToFitWidth = true
         
         viewControllers = [
             SequencerViewController(),
@@ -134,6 +137,12 @@ class ContainerViewController: UIViewController {
             isPlaying = true
         }
     }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            AudioEngine.shared.sequencer.clear()
+        }
+    }
 }
 
 extension ContainerViewController: UITableViewDataSource {
@@ -169,6 +178,6 @@ extension ContainerViewController: AudioEngineDelegate {
     func didUpdatePlaying(_ isPlaying: Bool) {}
 
     func didUpdateTempo(_ tempo: Double) {
-        tempoLabel.text = String("%.1d", tempo)
+        tempoLabel.text = String(format: "%.1f", tempo)
     }
 }

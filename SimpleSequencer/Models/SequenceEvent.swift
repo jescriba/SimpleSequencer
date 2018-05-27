@@ -9,12 +9,12 @@
 import Foundation
 
 struct SequenceEvent {
-    let note: Int
+    let track: Int
     let position: Double
     let duration: Double
     
-    init(note: Int, position: Double, duration: Double) {
-        self.note = note
+    init(track: Int, position: Double, duration: Double) {
+        self.track = track
         self.position = position
         self.duration = duration
     }
@@ -22,7 +22,7 @@ struct SequenceEvent {
 
 extension SequenceEvent: Equatable {
     static func == (lhs: SequenceEvent, rhs: SequenceEvent) -> Bool {
-        return lhs.note == rhs.note &&
+        return lhs.track == rhs.track &&
             lhs.position == rhs.position &&
             lhs.duration == rhs.duration
     }

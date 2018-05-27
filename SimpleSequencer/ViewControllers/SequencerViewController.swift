@@ -21,6 +21,6 @@ class SequencerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AudioEngine.shared.delegate = (view as! SequencerView)
+        AudioEngine.shared.delegates.append((view as! SequencerView))
     }
 }

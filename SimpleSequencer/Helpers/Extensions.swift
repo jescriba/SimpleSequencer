@@ -60,6 +60,20 @@ extension UIView {
     }
 }
 
+extension String {
+    func isPreferredNote() -> Bool {
+        guard self.contains("#") || self.contains("b") else {
+            return true
+        }
+        
+        guard ["Db", "D#", "Gb", "A#"].contains(self) else {
+            return true
+        }
+        
+        return false
+    }
+}
+
 extension Collection where Iterator.Element == TimeInterval
 {
     func average() -> TimeInterval {
@@ -75,10 +89,10 @@ extension Collection where Iterator.Element == SequenceEvent {
             let possibleRow = event.position * stepSize
             // Check if integer
             if floor(possibleRow) == possibleRow {
-                let indexPath = IndexPath(row: Int(possibleRow), section: event.note)
+                let indexPath = IndexPath(row: Int(possibleRow), section: event.track)
                 indexPaths.append(indexPath)
             } else {
-                let indexPath = PartialIndexPath(row: possibleRow, section: event.note)
+                let indexPath = PartialIndexPath(row: possibleRow, section: event.track)
                 indexPaths.append(indexPath)
             }
         }

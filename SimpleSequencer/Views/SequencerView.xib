@@ -13,6 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SequencerView" customModule="SimpleSequencer" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="HLx-Ie-1lB" id="MFO-jt-wBV"/>
+                <outlet property="pickerCollectionView" destination="UN1-kV-hHK" id="WSB-Lr-g9s"/>
+                <outlet property="pickerWidth" destination="tTD-ke-Eam" id="S2S-BN-MF8"/>
+                <outlet property="visualEffectContainerView" destination="HzQ-oh-JGG" id="K4H-cw-tdv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -30,19 +33,44 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HzQ-oh-JGG">
+                    <rect key="frame" x="60" y="0.0" width="607" height="375"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-kV-hHK">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="375"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="tTD-ke-Eam"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gVt-x8-LhH">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="0.95294117647058818" green="0.92549019607843142" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HLx-Ie-1lB" secondAttribute="trailing" id="0nK-4s-jVK"/>
+                <constraint firstItem="UN1-kV-hHK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3Fh-ac-uoA"/>
+                <constraint firstItem="UN1-kV-hHK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Dqs-iA-VMY"/>
                 <constraint firstItem="HLx-Ie-1lB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ILU-6B-H4y"/>
                 <constraint firstItem="HLx-Ie-1lB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JNb-av-n5V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HzQ-oh-JGG" secondAttribute="trailing" id="JPm-Yn-WlC"/>
+                <constraint firstItem="HzQ-oh-JGG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PWD-3L-JdT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HzQ-oh-JGG" secondAttribute="bottom" id="Rwp-23-zMW"/>
+                <constraint firstItem="HzQ-oh-JGG" firstAttribute="leading" secondItem="UN1-kV-hHK" secondAttribute="trailing" id="WZp-FK-Pen"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UN1-kV-hHK" secondAttribute="bottom" id="haQ-BI-1fQ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HLx-Ie-1lB" secondAttribute="bottom" id="oWb-p0-JPQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="SKE-d1-oHa" appends="YES" id="VTC-P4-k94"/>
             </connections>
+            <point key="canvasLocation" x="33.5" y="136.5"/>
         </view>
         <pinchGestureRecognizer id="SKE-d1-oHa">
             <connections>
