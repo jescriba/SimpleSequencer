@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-// TODO Handle for more time signatures than 4/4
 enum TimeDivision: Int {
     case quarter, quarterTriplet, eighth, eighthTriplet, sixteenth
     
@@ -355,8 +354,8 @@ class SequencerView: UIView {
         collectionView.reloadData()
     }
     
-    // Update the collection view UI to match EventSequence state
     /**
+        Updates collection view event state. Used for transfering UI event state from one 'timeDivision' (i.e. quarter, eighth, etc..) to another denomination
     */
     private func updateCollectionViewEventState() {
         collectionView.reloadData()
@@ -375,6 +374,10 @@ class SequencerView: UIView {
         }
     }
     
+    /**
+        Clear the sequencer UI for the specified track or all tracks.
+        - Parameter clear: Int for track UI to clear or all tracks if none specified
+    */
     func clear(_ track: Int? = nil) {
         guard let t = track else {
             // Clear all the tracks UI

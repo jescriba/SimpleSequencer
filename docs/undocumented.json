@@ -1,0 +1,1475 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 17,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 22,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 27,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 32,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 36,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/AppDelegate.swift",
+      "line": 40,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 14,
+      "symbol": "UIColor.whitePurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 15,
+      "symbol": "UIColor.lightPurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 16,
+      "symbol": "UIColor.purple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 17,
+      "symbol": "UIColor.solidPurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 18,
+      "symbol": "UIColor.darkPurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 19,
+      "symbol": "UIColor.darkerPurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 20,
+      "symbol": "UIColor.shadedPurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 21,
+      "symbol": "UIColor.burgundy",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 22,
+      "symbol": "UIColor.customGreen",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 23,
+      "symbol": "UIColor.customRed",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 24,
+      "symbol": "UIColor.customOrange",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 27,
+      "symbol": "UIColor.keyOn",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 28,
+      "symbol": "UIColor.octaveBorder",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 29,
+      "symbol": "UIColor.octaveBorderSelected",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 30,
+      "symbol": "UIColor.sequencerCell",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 31,
+      "symbol": "UIColor.sequencerCellSelected",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 32,
+      "symbol": "UIColor.sequencerCellPartialSelected",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 33,
+      "symbol": "UIColor.sequencerCellBorder",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 34,
+      "symbol": "UIColor.paneBorder",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 35,
+      "symbol": "UIColor.paneBorderSelected",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 36,
+      "symbol": "UIColor.playOn",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 37,
+      "symbol": "UIColor.playOff",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 38,
+      "symbol": "UIColor.tapTempo",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 39,
+      "symbol": "UIColor.tapTempoSelected",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 40,
+      "symbol": "UIColor.pastelYellow",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 41,
+      "symbol": "UIColor.pastelOrange",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 42,
+      "symbol": "UIColor.pastelBlue",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 43,
+      "symbol": "UIColor.pastelPurple",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 44,
+      "symbol": "UIColor.pastelRed",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 45,
+      "symbol": "UIColor.pastelGreen",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 49,
+      "symbol": "UIImage.fromSVG(named:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 55,
+      "symbol": "UIView.loadXib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 64,
+      "symbol": "String.isPreferredNote()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 79,
+      "symbol": "Collection.average()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Helpers/Extensions.swift",
+      "line": 85,
+      "symbol": "Collection.indexPathsFor(timeDivision:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 13,
+      "symbol": "AudioEngineDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 14,
+      "symbol": "AudioEngineDelegate.didUpdateTempo(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 15,
+      "symbol": "AudioEngineDelegate.didUpdatePlaying(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 18,
+      "symbol": "AudioEngine",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 19,
+      "symbol": "AudioEngine.maxTempo",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 20,
+      "symbol": "AudioEngine.minTempo",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 21,
+      "symbol": "AudioEngine.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 22,
+      "symbol": "AudioEngine.delegates",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 23,
+      "symbol": "AudioEngine.mixer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 24,
+      "symbol": "AudioEngine.sequencer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 25,
+      "symbol": "AudioEngine.tempo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 31,
+      "symbol": "AudioEngine.isPlaying",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/AudioEngine.swift",
+      "line": 43,
+      "symbol": "AudioEngine.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 11,
+      "symbol": "Note",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 12,
+      "symbol": "Note.keyToMidiNumber",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 13,
+      "symbol": "Note.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 14,
+      "symbol": "Note.octave",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 15,
+      "symbol": "Note.velocity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 16,
+      "symbol": "Note._all",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Note.swift",
+      "line": 17,
+      "symbol": "Note.all",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/PartialIndexPath.swift",
+      "line": 11,
+      "symbol": "GenericIndexPath",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/PartialIndexPath.swift",
+      "line": 13,
+      "symbol": "PartialIndexPath",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/PartialIndexPath.swift",
+      "line": 14,
+      "symbol": "PartialIndexPath.row",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/PartialIndexPath.swift",
+      "line": 15,
+      "symbol": "PartialIndexPath.section",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/PartialIndexPath.swift",
+      "line": 17,
+      "symbol": "PartialIndexPath.init(row:section:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/SequenceEvent.swift",
+      "line": null,
+      "symbol": "SequenceEvent",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/SequenceEvent.swift",
+      "line": 11,
+      "symbol": "SequenceEvent",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/SequenceEvent.swift",
+      "line": 12,
+      "symbol": "SequenceEvent.track",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/SequenceEvent.swift",
+      "line": 13,
+      "symbol": "SequenceEvent.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/SequenceEvent.swift",
+      "line": 14,
+      "symbol": "SequenceEvent.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/SequenceEvent.swift",
+      "line": 16,
+      "symbol": "SequenceEvent.init(track:position:duration:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 12,
+      "symbol": "Sequencer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 13,
+      "symbol": "Sequencer.maxTempo",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 14,
+      "symbol": "Sequencer.minTempo",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 15,
+      "symbol": "Sequencer.maxMeasure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 16,
+      "symbol": "Sequencer.measure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 17,
+      "symbol": "Sequencer.sequenceLength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 19,
+      "symbol": "Sequencer.events",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Models/Sequencer.swift",
+      "line": 20,
+      "symbol": "Sequencer.clearHandler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": null,
+      "symbol": "ContainerViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": null,
+      "symbol": "ContainerViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": null,
+      "symbol": "ContainerViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 13,
+      "symbol": "MenuItem",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 14,
+      "symbol": "MenuItem.help",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 14,
+      "symbol": "MenuItem.samples",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 14,
+      "symbol": "MenuItem.sequencer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 14,
+      "symbol": "MenuItem.settings",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 14,
+      "symbol": "MenuItem.synth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 16,
+      "symbol": "MenuItem.description()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 31,
+      "symbol": "MenuItem.all()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 36,
+      "symbol": "ContainerViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 37,
+      "symbol": "ContainerViewController.playButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 38,
+      "symbol": "ContainerViewController.tempoLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 39,
+      "symbol": "ContainerViewController.menuButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 40,
+      "symbol": "ContainerViewController.menuTableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 41,
+      "symbol": "ContainerViewController.contentView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 42,
+      "symbol": "ContainerViewController.contentBackgroundView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 43,
+      "symbol": "ContainerViewController.menuLeadingConstraint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 44,
+      "symbol": "ContainerViewController.isPlaying",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 59,
+      "symbol": "ContainerViewController.menuItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 60,
+      "symbol": "ContainerViewController.viewControllers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 61,
+      "symbol": "ContainerViewController.hasOpenMenu",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 62,
+      "symbol": "ContainerViewController.selectedViewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 84,
+      "symbol": "ContainerViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 111,
+      "symbol": "ContainerViewController.navigateTo(menuItem:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 117,
+      "symbol": "ContainerViewController.didTapMenu(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 133,
+      "symbol": "ContainerViewController.didTogglePlay(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 141,
+      "symbol": "ContainerViewController.motionEnded(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 149,
+      "symbol": "ContainerViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 153,
+      "symbol": "ContainerViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 170,
+      "symbol": "ContainerViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 178,
+      "symbol": "ContainerViewController.didUpdatePlaying(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/ContainerViewController.swift",
+      "line": 180,
+      "symbol": "ContainerViewController.didUpdateTempo(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/HelpViewController.swift",
+      "line": 12,
+      "symbol": "HelpViewControler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/HelpViewController.swift",
+      "line": 13,
+      "symbol": "HelpViewControler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/HelpViewController.swift",
+      "line": 17,
+      "symbol": "HelpViewControler.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SamplesViewController.swift",
+      "line": 12,
+      "symbol": "SamplesViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SamplesViewController.swift",
+      "line": 13,
+      "symbol": "SamplesViewController.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SamplesViewController.swift",
+      "line": 17,
+      "symbol": "SamplesViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SequencerViewController.swift",
+      "line": 12,
+      "symbol": "SequencerViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SequencerViewController.swift",
+      "line": 13,
+      "symbol": "SequencerViewController.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SequencerViewController.swift",
+      "line": 17,
+      "symbol": "SequencerViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SequencerViewController.swift",
+      "line": 21,
+      "symbol": "SequencerViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SettingsViewController.swift",
+      "line": 12,
+      "symbol": "SettingsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SettingsViewController.swift",
+      "line": 13,
+      "symbol": "SettingsViewController.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SettingsViewController.swift",
+      "line": 17,
+      "symbol": "SettingsViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SynthViewController.swift",
+      "line": 12,
+      "symbol": "SynthViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SynthViewController.swift",
+      "line": 13,
+      "symbol": "SynthViewController.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/ViewControllers/SynthViewController.swift",
+      "line": 17,
+      "symbol": "SynthViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 12,
+      "symbol": "MeasureMeter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 13,
+      "symbol": "MeasureMeter.playheadView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 14,
+      "symbol": "MeasureMeter.playheadConstraint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 16,
+      "symbol": "MeasureMeter.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 21,
+      "symbol": "MeasureMeter.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 26,
+      "symbol": "MeasureMeter.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 30,
+      "symbol": "MeasureMeter.commonInit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 46,
+      "symbol": "MeasureMeter.updatePlayheadConstraint(withTranslation:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/MeasureMeter.swift",
+      "line": 53,
+      "symbol": "MeasureMeter.didPanOnView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 12,
+      "symbol": "SequencerCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 13,
+      "symbol": "SequencerCell.mainView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 14,
+      "symbol": "SequencerCell.noteLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 15,
+      "symbol": "SequencerCell.note",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 20,
+      "symbol": "SequencerCell.shouldHideNote",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 29,
+      "symbol": "SequencerCell.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 38,
+      "symbol": "SequencerCell.isPlaying",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 52,
+      "symbol": "SequencerCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 57,
+      "symbol": "SequencerCell.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 62,
+      "symbol": "SequencerCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 66,
+      "symbol": "SequencerCell.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerCell.swift",
+      "line": 74,
+      "symbol": "SequencerCell.commonInit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": null,
+      "symbol": "PickerDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": null,
+      "symbol": "PickerDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": null,
+      "symbol": "SequencerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": null,
+      "symbol": "SequencerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": null,
+      "symbol": "SequencerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 12,
+      "symbol": "TimeDivision",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 13,
+      "symbol": "TimeDivision.eighth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 13,
+      "symbol": "TimeDivision.eighthTriplet",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 13,
+      "symbol": "TimeDivision.quarter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 13,
+      "symbol": "TimeDivision.quarterTriplet",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 13,
+      "symbol": "TimeDivision.sixteenth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 15,
+      "symbol": "TimeDivision.numberOfSteps()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 30,
+      "symbol": "TimeDivision.count()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 35,
+      "symbol": "PickerDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 36,
+      "symbol": "PickerDelegate.hidePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 39,
+      "symbol": "SequencerView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 40,
+      "symbol": "SequencerView.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 41,
+      "symbol": "SequencerView.pickerCollectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 42,
+      "symbol": "SequencerView.pickerWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 44,
+      "symbol": "SequencerView.visualEffectContainerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 46,
+      "symbol": "SequencerView.pickerDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 47,
+      "symbol": "SequencerView.timeDivision",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 54,
+      "symbol": "SequencerView.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 60,
+      "symbol": "SequencerView.activeSelectingPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 61,
+      "symbol": "SequencerView.shouldUpdateMarker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 62,
+      "symbol": "SequencerView.markerIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 67,
+      "symbol": "SequencerView.currentBeatTimer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 68,
+      "symbol": "SequencerView.isPlaying",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 79,
+      "symbol": "SequencerView.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 84,
+      "symbol": "SequencerView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 89,
+      "symbol": "SequencerView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 93,
+      "symbol": "SequencerView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 394,
+      "symbol": "SequencerView.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 398,
+      "symbol": "SequencerView.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 403,
+      "symbol": "SequencerView.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 419,
+      "symbol": "SequencerView.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 432,
+      "symbol": "SequencerView.collectionView(_:layout:minimumLineSpacingForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 436,
+      "symbol": "SequencerView.collectionView(_:layout:minimumInteritemSpacingForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 440,
+      "symbol": "SequencerView.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 448,
+      "symbol": "PickerDelegate.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 452,
+      "symbol": "PickerDelegate.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 457,
+      "symbol": "PickerDelegate.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 467,
+      "symbol": "PickerDelegate.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 471,
+      "symbol": "PickerDelegate.collectionView(_:layout:minimumLineSpacingForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 475,
+      "symbol": "PickerDelegate.collectionView(_:layout:minimumInteritemSpacingForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 479,
+      "symbol": "PickerDelegate.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 487,
+      "symbol": "SequencerView.didUpdatePlaying(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/SequencerView.swift",
+      "line": 491,
+      "symbol": "SequencerView.didUpdateTempo(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 12,
+      "symbol": "TempoSlider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 13,
+      "symbol": "TempoSlider.secondaryWidthConstraint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 14,
+      "symbol": "TempoSlider.secondaryView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 16,
+      "symbol": "TempoSlider.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 21,
+      "symbol": "TempoSlider.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 26,
+      "symbol": "TempoSlider.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 30,
+      "symbol": "TempoSlider.commonInit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 46,
+      "symbol": "TempoSlider.updateSliderConstraint(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joshua/code/SimpleSequencer/SimpleSequencer/Views/TempoSlider.swift",
+      "line": 53,
+      "symbol": "TempoSlider.didPanOnView(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/joshua/code/SimpleSequencer"
+}
