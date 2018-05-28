@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// ViewController for managing sequencer view
 class SequencerViewController: UIViewController {
     init() {
         super.init(nibName: "SequencerViewController", bundle: nil)

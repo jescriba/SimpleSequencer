@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// UICollectionViewCell for managing UI and styling of the sequencer items
 class SequencerCell: UICollectionViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var noteLabel: UILabel!

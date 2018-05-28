@@ -9,6 +9,7 @@
 import Foundation
 import AudioKit
 
+/// Audio sequencer
 class Sequencer: AKSequencer {
     static let maxTempo: Double = 260
     static let minTempo: Double = 30

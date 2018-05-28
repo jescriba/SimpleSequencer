@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Manages help view for watching instructional tutorial video and reporting bugs
 class HelpViewControler: UIViewController {
     init() {
         super.init(nibName: "HelpViewController", bundle: nil)

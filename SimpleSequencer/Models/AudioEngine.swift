@@ -10,11 +10,16 @@ import Foundation
 import AudioKit
 import AVFoundation
 
+/// Delegate for handling AudioEngine state changes like tempo and playing
 protocol AudioEngineDelegate {
     func didUpdateTempo(_ tempo: Double)
     func didUpdatePlaying(_ isPlaying: Bool)
 }
 
+/**
+    Shared central singleton for managing the audio state of the app.
+    Here you can interface with the sequencer and audio units as well as play state and tempo.
+*/
 class AudioEngine: NSObject {
     static let maxTempo: Double = 200
     static let minTempo: Double = 40

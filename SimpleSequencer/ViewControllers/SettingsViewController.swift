@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+/**
+    ViewController representing UI to manage settings.
+    This includes:
+        * MIDI Output (external device, internal synth, or sampler)
+        * Number of musical measures in the sequencer
+        * Time signature - 3/4 or 4/4 [wip]
+ */
 class SettingsViewController: UIViewController {
     init() {
         super.init(nibName: "SettingsViewController", bundle: nil)

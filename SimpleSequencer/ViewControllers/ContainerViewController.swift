@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import SVGKit
 
+/// MenuItem representing pages that can be navigated to from the menu
 enum MenuItem: Int {
     case sequencer, synth, samples, settings, help
     
@@ -28,11 +29,16 @@ enum MenuItem: Int {
         }
     }
     
+    /**
+        Get all the available menu items
+        Returns: [MenuItem] for all available pages
+    */
     static func all() -> [MenuItem] {
         return [.sequencer, .synth, .samples, .settings, .help]
     }
 }
 
+/// Container for menu and content view controllers. Manages toolbar view as well.
 class ContainerViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var tempoLabel: UILabel!
@@ -138,6 +144,9 @@ class ContainerViewController: UIViewController {
         }
     }
     
+    /**
+        Shake gesture behavior. Used for clearing sequencer state
+    */
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             AudioEngine.shared.sequencer.clear()

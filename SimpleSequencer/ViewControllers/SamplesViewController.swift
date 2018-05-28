@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// ViewController managing loading, editing, and selecting of the audio sample library
 class SamplesViewController: UIViewController {
     init() {
         super.init(nibName: "SamplesViewController", bundle: nil)

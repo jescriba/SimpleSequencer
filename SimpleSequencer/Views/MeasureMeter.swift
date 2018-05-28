@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// View for representing and adjusting the playing musical measure
 class MeasureMeter: UIView {
     @IBOutlet weak var playheadView: UIView!
     @IBOutlet weak var playheadConstraint: NSLayoutConstraint!

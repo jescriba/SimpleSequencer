@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Custom slider for adjusting the tempo
 class TempoSlider: UIView {
     @IBOutlet weak var secondaryWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var secondaryView: UIView!
