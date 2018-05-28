@@ -43,7 +43,7 @@ class Sequencer: AKSequencer {
         tracks[0].setLength(sequenceLength)
         let midi = AudioKit.midi
         midi.openOutput()
-//        tracks[0].setMIDIOutput((midi.endpoints.first?.value)!)
+        tracks[0].setMIDIOutput((midi.endpoints.first?.value)!)
         // TODO dynamic sequence Length
 //        tracks[SequenceType.kick.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
 //        tracks[SequenceType.kick.rawValue].setLength(sequenceLength)
@@ -69,8 +69,6 @@ class Sequencer: AKSequencer {
         Adds sequencer item event for the specified note
     */
     func addSequenceItem(note: Note, indexPath: IndexPath, stepSize: Float) {
-        // fix setuptracks call todo
-        setupTracks()
         let row = indexPath.row
         let position = Double(row) / stepSize
         let duration = Double(1.0) / stepSize
@@ -86,12 +84,12 @@ class Sequencer: AKSequencer {
         // wtf... the docs are confusing duration is the end AKDuration
         let position = Double(row) / stepSize
         let startDuration = AKDuration(beats: position)
-//        tracks[note.keyNumber()].clearRange(start: startDuration, duration: (AKDuration(beats: (1.0 / stepSize)) + startDuration))
-//
-//        let rawDuration = Double(1.0) / stepSize
-//        if let eventIndex = events.index(of: SequenceEvent(note: note.keyNumber(), position: position, duration: rawDuration)) {
-//            events.remove(at: eventIndex)
-//        }
+        tracks[0].clearRange(start: startDuration, duration: (AKDuration(beats: (1.0 / stepSize)) + startDuration))
+
+        let rawDuration = Double(1.0) / stepSize
+        if let eventIndex = events.index(of: SequenceEvent(track: note.keyNumber(), position: position, duration: rawDuration)) {
+            events.remove(at: eventIndex)
+        }
     }
     
     /**

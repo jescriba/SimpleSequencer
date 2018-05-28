@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25909C598272974FC64A5CB4 /* Pods_SimpleSequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */; };
+		42315C8F20BB7C9C00E03D00 /* EventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42315C8E20BB7C9C00E03D00 /* EventHelper.swift */; };
 		425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A1420956DE200F486DB /* AppDelegate.swift */; };
 		425C7A1A20956DE200F486DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1820956DE200F486DB /* Main.storyboard */; };
 		425C7A1C20956DE400F486DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1B20956DE400F486DB /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42315C8E20BB7C9C00E03D00 /* EventHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHelper.swift; sourceTree = "<group>"; };
 		425C7A1120956DE200F486DB /* SimpleSequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425C7A1420956DE200F486DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		425C7A1920956DE200F486DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				425C7A2920956F9700F486DB /* Extensions.swift */,
+				42315C8E20BB7C9C00E03D00 /* EventHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				425C7A36209F7F9A00F486DB /* SynthViewController.swift in Sources */,
 				42DAE59E209FF1D900E525DE /* TempoSlider.swift in Sources */,
 				425C7A3C209F7FB400F486DB /* HelpViewController.swift in Sources */,
+				42315C8F20BB7C9C00E03D00 /* EventHelper.swift in Sources */,
 				42DAE5AA20A3D01400E525DE /* Sequencer.swift in Sources */,
 				425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */,
 				425C7A38209F7FA300F486DB /* SamplesViewController.swift in Sources */,
@@ -498,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GFSP92A3FB;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SimpleSequencer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

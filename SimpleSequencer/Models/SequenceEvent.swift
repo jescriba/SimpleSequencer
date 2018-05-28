@@ -8,9 +8,15 @@
 
 import Foundation
 
+/**
+    SequenceEvent corresponding to the MIDI track with a position and duration
+*/
 struct SequenceEvent {
+    /// MIDI track index
     let track: Int
+    /// Position of MIDI note in time
     let position: Double
+    /// Duration of MIDI note to be played
     let duration: Double
     
     init(track: Int, position: Double, duration: Double) {

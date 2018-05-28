@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+/**
+    TimeDivison representing number of events in a measure.
+ 
+    For example: 4 notes a measure is .quarter, 8 notes a measure is .eighth - this currently assumes 4/4 time signature
+*/
 enum TimeDivision: Int {
     case quarter, quarterTriplet, eighth, eighthTriplet, sixteenth
     
@@ -32,10 +37,12 @@ enum TimeDivision: Int {
     }
 }
 
+/// Delegate for handling note picker UI and events
 class PickerDelegate: NSObject {
     var hidePicker: ((IndexPath?) -> ())?
 }
 
+/// View corresponding to sequencer collection view and note picker
 class SequencerView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pickerCollectionView: UICollectionView!
@@ -58,13 +65,16 @@ class SequencerView: UIView {
                                       Note(key: "F", octave: 3, velocity: 60)
                                     ]
     private var activeSelectingPath: IndexPath!
+    private var isAnimatingPicker = false
     private var shouldUpdateMarker = false
     private var markerIndex = 0 {
         didSet {
             shouldUpdateMarker = true
         }
     }
+    /// Timer for polling playhead UI positioning
     private var currentBeatTimer = Timer()
+    /// Indicate playing state. Will set beat timer for playhead
     private var isPlaying = false {
         didSet {
             currentBeatTimer.invalidate()
@@ -206,7 +216,7 @@ class SequencerView: UIView {
             cell.subviews.filter {
                 $0.accessibilityIdentifier == "FillView"
                 }.forEach {
-                    $0.backgroundColor = .playOn
+                    $0.backgroundColor = .black
             }
         }
     }
@@ -231,7 +241,7 @@ class SequencerView: UIView {
             cell.subviews.filter {
                 $0.accessibilityIdentifier == "FillView"
                 }.forEach {
-                    $0.backgroundColor = .sequencerCellPartialSelected
+                    $0.backgroundColor = .solidPurple2
             }
         }
     }
@@ -284,20 +294,21 @@ class SequencerView: UIView {
     */
     func partialFillCell(_ indexPath: PartialIndexPath) {
         let path = IndexPath(row: Int(floor(indexPath.row)), section: indexPath.section)
-        guard let cell = collectionView.cellForItem(at: path) else {
+        guard let cell = collectionView.cellForItem(at: path) as? SequencerCell else {
             return
         }
         
         let fillView = UIView()
         fillView.translatesAutoresizingMaskIntoConstraints = false
-        fillView.backgroundColor = .sequencerCellPartialSelected
+        fillView.backgroundColor = .solidPurple2
         fillView.accessibilityIdentifier = "FillView"
+        fillView.layer.cornerRadius = 10
         cell.addSubview(fillView)
         NSLayoutConstraint.activate([
-            fillView.topAnchor.constraint(equalTo: cell.topAnchor),
-            fillView.bottomAnchor.constraint(equalTo: cell.bottomAnchor),
-            fillView.leftAnchor.constraint(equalTo: cell.leftAnchor),
-            fillView.widthAnchor.constraint(equalTo: cell.widthAnchor, multiplier: 0.34)
+            fillView.topAnchor.constraint(equalTo: cell.mainView.topAnchor),
+            fillView.bottomAnchor.constraint(equalTo: cell.mainView.bottomAnchor),
+            fillView.leftAnchor.constraint(equalTo: cell.mainView.leftAnchor),
+            fillView.widthAnchor.constraint(equalTo: cell.mainView.widthAnchor, multiplier: 0.34)
             ])
     }
     
@@ -319,7 +330,6 @@ class SequencerView: UIView {
         - Parameter sender: UILongPressGestureRecognizer corresponding to an active sequencer note visible on screen
     */
     @objc func showPicker(sender: UILongPressGestureRecognizer) {
-        // TODO: Animate picker coming in with spring
         guard let cell = sender.view as? SequencerCell,
               let section = Note.all.index(where: { (note) -> Bool in
             note.key == cell.note.key && note.octave == cell.note.octave
@@ -328,14 +338,25 @@ class SequencerView: UIView {
         activeSelectingPath = path
         let pickerPath = IndexPath(row: 0, section: section)
         pickerCollectionView.scrollToItem(at: pickerPath, at: .centeredVertically, animated: false)
-        let pickerCell = pickerCollectionView.cellForItem(at: pickerPath)
-        pickerCell?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        UIView.animate(withDuration: 1.5, delay: 0.1, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.1, options: [], animations: {
-            pickerCell?.transform = CGAffineTransform(scaleX: 1, y: 1)
-        }, completion: nil
-        )
         pickerCollectionView.isHidden = false
         visualEffectContainerView.isHidden = false
+        guard let pickerCell = pickerCollectionView.cellForItem(at: pickerPath) else { return }
+        animatePicker(cell: pickerCell)
+    }
+    
+    /**
+        Animates the sequencer cell while picking a new note
+        - Parameter cell: UICollectionViewCell view to animate scale
+    */
+    func animatePicker(cell: UICollectionViewCell) {
+        guard !isAnimatingPicker else { return }
+        isAnimatingPicker = true
+        cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        UIView.animate(withDuration: 1.2, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.1, options: [], animations: {
+            cell.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }, completion: { [weak self] _ in
+            self?.isAnimatingPicker = false
+        })
     }
     
     /**
@@ -364,7 +385,8 @@ class SequencerView: UIView {
         let events = AudioEngine.shared.sequencer.events
         deselectCells()
         
-        let indexPaths = events.indexPathsFor(timeDivision: timeDivision)
+        let visibleTracks = notes.map { $0.keyNumber() }
+        let indexPaths = events.indexPathsFor(timeDivision: timeDivision, visibleTracks: visibleTracks)
         for indexPath in indexPaths {
             if let path = indexPath as? IndexPath {
                 selectCell(path)
@@ -402,7 +424,8 @@ extension SequencerView: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SequencerCell", for: indexPath) as! SequencerCell
-        cell.note = notes[indexPath.section]
+        let note = notes[indexPath.section]
+        cell.note = note
         cell.backgroundColor = .whitePurple
         if indexPath.row > 0 {
             cell.shouldHideNote = true
@@ -411,6 +434,12 @@ extension SequencerView: UICollectionViewDataSource {
             let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(showPicker(sender:)))
             cell.addGestureRecognizer(recognizer)
         }
+        
+        cell.isEnabled = EventHelper.isEnabled(note: note,
+                                               timeDivision: timeDivision,
+                                               row: indexPath.row)
+        
+        // TODO @joshua partial fill handling
         return cell
     }
 }
