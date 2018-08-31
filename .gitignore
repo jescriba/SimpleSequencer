@@ -2,6 +2,10 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+## Configuration files
+.dev-team
+.bundle-identifier
+
 ## Build generated
 build/
 DerivedData/
@@ -16,6 +20,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+xcshareddata/
 
 ## Other
 *.moved-aside
