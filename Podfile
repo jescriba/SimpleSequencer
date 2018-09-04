@@ -35,4 +35,10 @@ post_install do |installer|
       xcconfig.puts "PRODUCT_BUNDLE_IDENTIFIER = #{bundle_id}"
     end
   end
+
+  # Fix for Cocoapods < 1.6.0 to remove warnings: https://github.com/CocoaPods/CocoaPods/pull/7721
+  podsTargets = installer.pods_project.targets.find_all { |target| target.name.start_with?('Pods') }
+  podsTargets.each do |target|
+      target.frameworks_build_phase.clear
+  end
 end
