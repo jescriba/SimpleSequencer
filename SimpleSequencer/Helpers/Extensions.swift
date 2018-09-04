@@ -57,7 +57,7 @@ extension String {
 extension Collection where Iterator.Element == TimeInterval
 {
     func average() -> TimeInterval {
-        return self.reduce(0, +) / Double(self.count as! Int)
+        return self.reduce(0, +) / TimeInterval(self.count)
     }
 }
 
