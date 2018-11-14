@@ -19,6 +19,7 @@ class Sequencer: AKSequencer {
     // Needed for managing event sequence state
     var events = [SequenceEvent]()
     var clearHandler: ((Int?) -> ())?
+    let synth = Synth()
     
     override init() {
         super.init()
@@ -44,7 +45,9 @@ class Sequencer: AKSequencer {
         tracks[0].setLength(sequenceLength)
         let midi = AudioKit.midi
         midi.openOutput()
-        tracks[0].setMIDIOutput((midi.endpoints.first?.value)!)
+        let midiNode = AKMIDINode(node: synth.oscillatorBank)
+        tracks[0].setMIDIOutput(midiNode.midiIn)
+        //tracks[0].setMIDIOutput((midi.endpoints.first?.value)!)
         // TODO dynamic sequence Length
 //        tracks[SequenceType.kick.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
 //        tracks[SequenceType.kick.rawValue].setLength(sequenceLength)

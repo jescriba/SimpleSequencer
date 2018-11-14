@@ -10,7 +10,8 @@ target 'SimpleSequencer' do
 
   # Pods for SimpleSequencer
   pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '2.x'
-  pod 'AudioKit', '~> 4.0'
+  pod 'AudioKit', '~> 4.0' 
+  pod 'AudioKitUI', '~> 4.0'
 
 end
 

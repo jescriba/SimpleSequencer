@@ -1,15 +1,18 @@
 PODS:
-  - AudioKit (4.2.3):
-    - AudioKit/UI (= 4.2.3)
-  - AudioKit/UI (4.2.3)
-  - CocoaLumberjack (3.4.1):
-    - CocoaLumberjack/Default (= 3.4.1)
-    - CocoaLumberjack/Extensions (= 3.4.1)
-  - CocoaLumberjack/Default (3.4.1)
-  - CocoaLumberjack/Extensions (3.4.1):
+  - AudioKit (4.5.4):
+    - AudioKit/Core (= 4.5.4)
+    - AudioKit/UI (= 4.5.4)
+  - AudioKit/Core (4.5.4)
+  - AudioKit/UI (4.5.4):
+    - AudioKit/Core
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
-  - SVGKit (2.0.1):
-    - CocoaLumberjack (~> 3.x)
+  - SVGKit (2.1.0):
+    - CocoaLumberjack (~> 3.0)
 
 DEPENDENCIES:
   - AudioKit (~> 4.0)
@@ -27,13 +30,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SVGKit:
-    :commit: 0799e49c6ccd387888c5a6592b93f8b42e41bfeb
+    :commit: bfe62f6d45f55c9fe39619d9e91fed1844c59da6
     :git: https://github.com/SVGKit/SVGKit.git
 
 SPEC CHECKSUMS:
-  AudioKit: 65e0035ce267446932ac733257053ac97dfe395e
-  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
-  SVGKit: 4055d9e809b5db8633755979cfb3b02dc5a8c20d
+  AudioKit: af3f5b73e22f85f3cd03076fea8afbb9658f0938
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  SVGKit: 8a2fc74258bdb2abb54d3b65f3dd68b0277a9c4d
 
 PODFILE CHECKSUM: b2de4c3a5ed018a26065e6a1cf19e391fd6c6095
 

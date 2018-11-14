@@ -23,6 +23,9 @@ extension UIColor {
     static let customGreen = UIColor(red:0.24, green:0.90, blue:0.26, alpha:1.0) // #3CE542
     static let customRed = UIColor(red:1.00, green:0.25, blue:0.25, alpha:1.0) // #ff4040
     static let customOrange = UIColor(red:1.00, green:0.60, blue:0.18, alpha:1.0) // #FF982F
+    static let customLightBlue = UIColor(red:0.82, green:0.93, blue:0.93, alpha:1.0) // #D2EDED Background ADSR
+    static let customBlueGreen = UIColor(red:0.00, green:0.42, blue:0.42, alpha:1.0) // #006A6A used in attack
+    static let customLightBlueGreen = UIColor(red:0.00, green:0.69, blue:0.69, alpha:1.0) // #00AFAF Used in decary
 }
 
 extension UIImage {
@@ -81,5 +84,36 @@ extension Collection where Iterator.Element == SequenceEvent {
         }
         
         return indexPaths
+    }
+}
+
+@IBDesignable extension UIView {
+    @IBInspectable var borderColor: UIColor? {
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+        get {
+            guard let color = layer.borderColor else {
+                return nil
+            }
+            return UIColor(cgColor: color)
+        }
+    }
+    @IBInspectable var borderWidth: CGFloat {
+        set {
+            layer.borderWidth = newValue
+        }
+        get {
+            return layer.borderWidth
+        }
+    }
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+            clipsToBounds = newValue > 0
+        }
+        get {
+            return layer.cornerRadius
+        }
     }
 }

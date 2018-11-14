@@ -124,6 +124,7 @@ class SequencerView: UIView {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.layer.cornerRadius = 5
+        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
         pickerDelegate.hidePicker = hidePicker
         pickerCollectionView.register(SequencerCell.self, forCellWithReuseIdentifier: "SequencerCell")

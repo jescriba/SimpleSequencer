@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,21 +15,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ContainerViewController" customModule="SimpleSequencer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Axm-uv-TrQ">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="375"/>
+                                <rect key="frame" x="44" y="0.0" width="150" height="393"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="uXg-eV-DK9"/>
                                 </constraints>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-Md-2cM" userLabel="ContentBackgroundView">
-                                <rect key="frame" x="150" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="194" y="0.0" width="808" height="393"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMe-X5-jMi">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbA-7B-b3g">
                                                 <rect key="frame" x="15" y="5" width="40" height="40"/>
@@ -43,15 +43,15 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVe-JG-pCS" customClass="TempoSlider" customModule="SimpleSequencer" customModuleProvider="target">
-                                                <rect key="frame" x="150" y="10" width="209" height="30"/>
+                                                <rect key="frame" x="150" y="10" width="279" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw2-3C-lW1" userLabel="tool bar view" customClass="MeasureMeter" customModule="SimpleSequencer" customModuleProvider="target">
-                                                <rect key="frame" x="379" y="10" width="208.5" height="30"/>
+                                                <rect key="frame" x="449" y="10" width="279" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mig-fH-znA">
-                                                <rect key="frame" x="607" y="5" width="40" height="40"/>
+                                                <rect key="frame" x="748" y="5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="HCd-4C-rsS"/>
                                                     <constraint firstAttribute="width" constant="40" id="eCN-T0-cLs"/>
@@ -66,11 +66,11 @@
                                                     <constraint firstAttribute="width" constant="60" id="Hqq-pM-0Xa"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
-                                                <color key="textColor" red="0.93725490196078431" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.25932548415492956" green="0.11708889982049152" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.396078431372549" green="0.019607843137254902" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.87450980392156863" green="0.52549019607843139" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2rs-O8-suz"/>
                                             <constraint firstAttribute="bottom" secondItem="ZVe-JG-pCS" secondAttribute="bottom" constant="10" id="824-GX-N8t"/>
@@ -91,7 +91,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjq-Sy-xwV">
-                                        <rect key="frame" x="0.0" y="50" width="667" height="325"/>
+                                        <rect key="frame" x="0.0" y="50" width="808" height="343"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.92549019607843142" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -109,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.92549019607843142" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8Fp-Md-2cM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CVJ-Q4-Znd"/>
+                            <constraint firstItem="8Fp-Md-2cM" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="CVJ-Q4-Znd"/>
                             <constraint firstItem="Axm-uv-TrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FzT-ik-a1x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Axm-uv-TrQ" secondAttribute="bottom" id="a3E-4H-7qx"/>
                             <constraint firstItem="Axm-uv-TrQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lYd-05-FKb"/>

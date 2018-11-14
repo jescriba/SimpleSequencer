@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		25909C598272974FC64A5CB4 /* Pods_SimpleSequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */; };
+		4207580B2197C65300104096 /* SynthADSRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4207580A2197C65300104096 /* SynthADSRView.xib */; };
+		4207580D2197C66600104096 /* SynthADSRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207580C2197C66600104096 /* SynthADSRView.swift */; };
+		4207580F2197C67500104096 /* SynthFXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207580E2197C67500104096 /* SynthFXView.swift */; };
+		420758112197C68500104096 /* SynthFXView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420758102197C68500104096 /* SynthFXView.xib */; };
+		42075817219943F300104096 /* SynthFXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42075816219943F300104096 /* SynthFXTableViewCell.swift */; };
+		420758192199440600104096 /* SynthFXTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420758182199440600104096 /* SynthFXTableViewCell.xib */; };
+		4207581B219BFF6B00104096 /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207581A219BFF6B00104096 /* Synth.swift */; };
 		42315C8F20BB7C9C00E03D00 /* EventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42315C8E20BB7C9C00E03D00 /* EventHelper.swift */; };
 		425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A1420956DE200F486DB /* AppDelegate.swift */; };
 		425C7A1A20956DE200F486DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1820956DE200F486DB /* Main.storyboard */; };
@@ -27,6 +34,7 @@
 		425C7A40209FA09000F486DB /* SamplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A3F209FA09000F486DB /* SamplesViewController.xib */; };
 		425C7A42209FA09F00F486DB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A41209FA09F00F486DB /* SettingsViewController.xib */; };
 		425C7A44209FA0AA00F486DB /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A43209FA0AA00F486DB /* HelpViewController.xib */; };
+		4274A267219414A100AB67B2 /* SequencerViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4274A266219414A100AB67B2 /* SequencerViewLayout.swift */; };
 		429B528420A911C90032347A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429B528320A911C90032347A /* Note.swift */; };
 		42DAE591209FA62200E525DE /* hamburger.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE590209FA62200E525DE /* hamburger.svg */; };
 		42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE593209FA7A600E525DE /* AudioEngine.swift */; };
@@ -45,6 +53,13 @@
 
 /* Begin PBXFileReference section */
 		3451EE90A72A971E0A6BE28D /* Pods_SimpleSequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4207580A2197C65300104096 /* SynthADSRView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynthADSRView.xib; sourceTree = "<group>"; };
+		4207580C2197C66600104096 /* SynthADSRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthADSRView.swift; sourceTree = "<group>"; };
+		4207580E2197C67500104096 /* SynthFXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthFXView.swift; sourceTree = "<group>"; };
+		420758102197C68500104096 /* SynthFXView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynthFXView.xib; sourceTree = "<group>"; };
+		42075816219943F300104096 /* SynthFXTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthFXTableViewCell.swift; sourceTree = "<group>"; };
+		420758182199440600104096 /* SynthFXTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynthFXTableViewCell.xib; sourceTree = "<group>"; };
+		4207581A219BFF6B00104096 /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
 		42315C8E20BB7C9C00E03D00 /* EventHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHelper.swift; sourceTree = "<group>"; };
 		425C7A1120956DE200F486DB /* SimpleSequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425C7A1420956DE200F486DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +81,7 @@
 		425C7A3F209FA09000F486DB /* SamplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SamplesViewController.xib; sourceTree = "<group>"; };
 		425C7A41209FA09F00F486DB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		425C7A43209FA0AA00F486DB /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		4274A266219414A100AB67B2 /* SequencerViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerViewLayout.swift; sourceTree = "<group>"; };
 		429B528320A911C90032347A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		42DAE590209FA62200E525DE /* hamburger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hamburger.svg; sourceTree = "<group>"; };
 		42DAE593209FA7A600E525DE /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
@@ -136,14 +152,14 @@
 			children = (
 				425C7A2B2095709000F486DB /* ContainerViewController.swift */,
 				425C7A2D209572A800F486DB /* SequencerViewController.swift */,
-				425C7A35209F7F9A00F486DB /* SynthViewController.swift */,
-				425C7A37209F7FA300F486DB /* SamplesViewController.swift */,
-				425C7A39209F7FAB00F486DB /* SettingsViewController.swift */,
-				425C7A3B209F7FB400F486DB /* HelpViewController.swift */,
 				425C7A33209F730000F486DB /* SequencerViewController.xib */,
+				425C7A35209F7F9A00F486DB /* SynthViewController.swift */,
 				425C7A3D209FA08000F486DB /* SynthViewController.xib */,
+				425C7A37209F7FA300F486DB /* SamplesViewController.swift */,
 				425C7A3F209FA09000F486DB /* SamplesViewController.xib */,
+				425C7A39209F7FAB00F486DB /* SettingsViewController.swift */,
 				425C7A41209FA09F00F486DB /* SettingsViewController.xib */,
+				425C7A3B209F7FB400F486DB /* HelpViewController.swift */,
 				425C7A43209FA0AA00F486DB /* HelpViewController.xib */,
 			);
 			path = ViewControllers;
@@ -160,6 +176,13 @@
 				42DAE59F209FF1E300E525DE /* TempoSlider.xib */,
 				42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */,
 				42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */,
+				4274A266219414A100AB67B2 /* SequencerViewLayout.swift */,
+				4207580A2197C65300104096 /* SynthADSRView.xib */,
+				4207580C2197C66600104096 /* SynthADSRView.swift */,
+				4207580E2197C67500104096 /* SynthFXView.swift */,
+				420758102197C68500104096 /* SynthFXView.xib */,
+				42075816219943F300104096 /* SynthFXTableViewCell.swift */,
+				420758182199440600104096 /* SynthFXTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +214,7 @@
 				42DAE5AB20A3D17500E525DE /* SequenceEvent.swift */,
 				42DAE5AD20A3D98500E525DE /* PartialIndexPath.swift */,
 				429B528320A911C90032347A /* Note.swift */,
+				4207581A219BFF6B00104096 /* Synth.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,11 +296,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420758112197C68500104096 /* SynthFXView.xib in Resources */,
 				42DAE5A0209FF1E300E525DE /* TempoSlider.xib in Resources */,
 				425C7A32209F6E3300F486DB /* SequencerView.xib in Resources */,
 				425C7A1F20956DE400F486DB /* LaunchScreen.storyboard in Resources */,
 				425C7A34209F730000F486DB /* SequencerViewController.xib in Resources */,
 				425C7A42209FA09F00F486DB /* SettingsViewController.xib in Resources */,
+				420758192199440600104096 /* SynthFXTableViewCell.xib in Resources */,
 				42DAE5A8209FFE4B00E525DE /* SequencerCell.xib in Resources */,
 				42DAE59C209FEFFF00E525DE /* play.svg in Resources */,
 				42DAE598209FE05800E525DE /* stop.svg in Resources */,
@@ -285,6 +311,7 @@
 				425C7A1C20956DE400F486DB /* Assets.xcassets in Resources */,
 				425C7A1A20956DE200F486DB /* Main.storyboard in Resources */,
 				42DAE591209FA62200E525DE /* hamburger.svg in Resources */,
+				4207580B2197C65300104096 /* SynthADSRView.xib in Resources */,
 				42DAE5A4209FF20B00E525DE /* MeasureMeter.xib in Resources */,
 				425C7A3E209FA08000F486DB /* SynthViewController.xib in Resources */,
 			);
@@ -340,12 +367,17 @@
 			files = (
 				42DAE5A6209FFE3C00E525DE /* SequencerCell.swift in Sources */,
 				425C7A30209572D500F486DB /* SequencerView.swift in Sources */,
+				42075817219943F300104096 /* SynthFXTableViewCell.swift in Sources */,
 				425C7A2A20956F9700F486DB /* Extensions.swift in Sources */,
+				4274A267219414A100AB67B2 /* SequencerViewLayout.swift in Sources */,
 				42DAE5AE20A3D98500E525DE /* PartialIndexPath.swift in Sources */,
 				429B528420A911C90032347A /* Note.swift in Sources */,
 				42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */,
+				4207580F2197C67500104096 /* SynthFXView.swift in Sources */,
 				425C7A2C2095709000F486DB /* ContainerViewController.swift in Sources */,
+				4207581B219BFF6B00104096 /* Synth.swift in Sources */,
 				42DAE5AC20A3D17500E525DE /* SequenceEvent.swift in Sources */,
+				4207580D2197C66600104096 /* SynthADSRView.swift in Sources */,
 				42DAE5A2209FF1FA00E525DE /* MeasureMeter.swift in Sources */,
 				425C7A36209F7F9A00F486DB /* SynthViewController.swift in Sources */,
 				42DAE59E209FF1D900E525DE /* TempoSlider.swift in Sources */,
