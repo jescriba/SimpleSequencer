@@ -15,11 +15,12 @@ class Sequencer: AKSequencer {
     static let minTempo: Double = 30
     var maxMeasure: Double = 2.0
     var measure: Double = 0.5
-    private let sequenceLength = AKDuration(beats: 4.0)
     // Needed for managing event sequence state
     var events = [SequenceEvent]()
     var clearHandler: ((Int?) -> ())?
-    let synth = Synth()
+    internal private(set) var midiNode: AKMIDINode!
+    private var midiOutput: MIDIEndpointRef!
+    private var sequenceLength = AKDuration(beats: 4.0)
     
     override init() {
         super.init()
@@ -28,10 +29,23 @@ class Sequencer: AKSequencer {
     }
     
     /**
-        Changes the MIDI output source
+        Configure the MIDI output source
     */
-    func changeOutput() {
+    func setMidiOutput(_ node: AKPolyphonicNode) {
        // TODO change midi output source
+        midiNode = AKMIDINode(node: node)
+        midiOutput = midiNode.midiIn
+        tracks.forEach({ $0.setMIDIOutput(midiOutput) })
+    }
+    
+    /**
+        Sets the loop info, number of loops, and sequence length
+    */
+    func setLength() {
+        tracks.forEach({
+            $0.setLoopInfo(sequenceLength, numberOfLoops: 0)
+            $0.setLengthSoft(sequenceLength)
+        })
     }
     
     /**
@@ -40,33 +54,8 @@ class Sequencer: AKSequencer {
     func setupTracks() {
         tracks.removeAll()
         
+        
         _ = newTrack()
-        tracks[0].setLoopInfo(sequenceLength, numberOfLoops: 0)
-        tracks[0].setLength(sequenceLength)
-        let midi = AudioKit.midi
-        midi.openOutput()
-        let midiNode = AKMIDINode(node: synth.oscillatorBank)
-        tracks[0].setMIDIOutput(midiNode.midiIn)
-        //tracks[0].setMIDIOutput((midi.endpoints.first?.value)!)
-        // TODO dynamic sequence Length
-//        tracks[SequenceType.kick.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
-//        tracks[SequenceType.kick.rawValue].setLength(sequenceLength)
-//        tracks[SequenceType.kick.rawValue].setMIDIOutput(kick.midiIn)
-//
-//        _ = newTrack()
-//        tracks[SequenceType.snare.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
-//        tracks[SequenceType.snare.rawValue].setLength(sequenceLength)
-//        tracks[SequenceType.snare.rawValue].setMIDIOutput(snare.midiIn)
-//
-//        _ = newTrack()
-//        tracks[SequenceType.closedHH.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
-//        tracks[SequenceType.closedHH.rawValue].setLength(sequenceLength)
-//        tracks[SequenceType.closedHH.rawValue].setMIDIOutput(closedHH.midiIn)
-//
-//        _ = newTrack()
-//        tracks[SequenceType.openHH.rawValue].setLoopInfo(sequenceLength, numberOfLoops: 0)
-//        tracks[SequenceType.openHH.rawValue].setLength(sequenceLength)
-//        tracks[SequenceType.openHH.rawValue].setMIDIOutput(openHH.midiIn)
     }
     
     /**

@@ -1,5 +1,5 @@
 //
-//  TempoSlider.swift
+//  CustomSlider.swift
 //  SimpleSequencer
 //
 //  Created by Joshua Escribano on 5/6/18.
@@ -9,10 +9,32 @@
 import Foundation
 import UIKit
 
-/// Custom slider for adjusting the tempo
-class TempoSlider: UIView {
+protocol CustomSliderDelegate: NSObjectProtocol {
+    func valueDidChange(newValue: Double, tag: Int)
+}
+
+/// Custom slider
+class CustomSlider: UIView {
     @IBOutlet weak var secondaryWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var secondaryView: UIView!
+    var primaryColor: UIColor = .tempoSliderPrimary {
+        didSet {
+            backgroundColor = primaryColor
+        }
+    }
+    var secondaryColor: UIColor = .tempoSliderSecondary {
+        didSet {
+            secondaryView.backgroundColor = secondaryColor
+        }
+    }
+    var maxValue: Double = 10
+    var minValue: Double = 1
+    var value: Double = 1 {
+        didSet {
+            delegate?.valueDidChange(newValue: value, tag: tag)
+        }
+    }
+    weak var delegate: CustomSliderDelegate?
   
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,8 +67,8 @@ class TempoSlider: UIView {
     }
 
     private func updateSliderConstraint(_ width: CGFloat? = nil) {
-        let w = width ?? bounds.width * CGFloat((AudioEngine.shared.tempo - AudioEngine.minTempo) / (AudioEngine.maxTempo - AudioEngine.minTempo))
-
+        let w = width ?? bounds.width * CGFloat((value - minValue) / (maxValue - minValue))
+        
         secondaryWidthConstraint.constant = -1 * (bounds.width - w)
         layoutIfNeeded()
     }
@@ -55,9 +77,7 @@ class TempoSlider: UIView {
         let translation = sender.location(in: self).x
         guard translation > 0, translation <= bounds.width else { return }
         
-        let tempo = Double(translation / bounds.width) * (AudioEngine.maxTempo - AudioEngine.minTempo) + AudioEngine.minTempo
-        AudioEngine.shared.tempo = tempo
-
+        value = Double(translation / bounds.width) * (maxValue - minValue) + minValue
         updateSliderConstraint(translation)
     }
     

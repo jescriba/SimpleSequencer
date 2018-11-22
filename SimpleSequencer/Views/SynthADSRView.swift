@@ -48,5 +48,14 @@ class SynthADSRView: UIView {
         adsrView.decayColor = .customLightBlueGreen
         adsrView.sustainColor = .customBlueGreen
         adsrView.releaseColor = .customLightBlueGreen
+        adsrView.callback = updateADSR(attack:decay:sustain:release:)
+    }
+    
+    func updateADSR(attack: Double, decay: Double, sustain: Double, release: Double) {
+        let synth = AudioEngine.shared.synth
+        synth.oscillatorBank.attackDuration = attack
+        synth.oscillatorBank.decayDuration = decay
+        synth.oscillatorBank.sustainLevel = sustain
+        synth.oscillatorBank.releaseDuration = release
     }
 }

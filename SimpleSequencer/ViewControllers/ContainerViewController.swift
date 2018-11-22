@@ -40,6 +40,7 @@ enum MenuItem: Int {
 
 /// Container for menu and content view controllers. Manages toolbar view as well.
 class ContainerViewController: UIViewController {
+    @IBOutlet weak var tempoSlider: CustomSlider!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var tempoLabel: UILabel!
     @IBOutlet weak var menuButton: UIButton!
@@ -69,12 +70,12 @@ class ContainerViewController: UIViewController {
         didSet {
             // Navigate to view controller
             if let v = oldValue {
-                v.willMove(toParentViewController: nil)
+                v.willMove(toParent: nil)
                 v.view.removeFromSuperview()
-                v.removeFromParentViewController()
+                v.removeFromParent()
             }
             
-            addChildViewController(selectedViewController)
+            addChild(selectedViewController)
             selectedViewController.view.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview(selectedViewController.view)
             NSLayoutConstraint.activate([
@@ -83,7 +84,7 @@ class ContainerViewController: UIViewController {
                 selectedViewController.view.topAnchor.constraint(equalTo: contentView.topAnchor),
                 selectedViewController.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
                 ])
-            selectedViewController.didMove(toParentViewController: self)
+            selectedViewController.didMove(toParent: self)
         }
     }
     
@@ -102,6 +103,10 @@ class ContainerViewController: UIViewController {
         contentBackgroundView.layer.shadowOpacity = 1
         contentBackgroundView.layer.shadowRadius = 2
         tempoLabel.adjustsFontSizeToFitWidth = true
+        tempoSlider.delegate = self
+        tempoSlider.maxValue = AudioEngine.maxTempo
+        tempoSlider.minValue = AudioEngine.minTempo
+        tempoSlider.value = AudioEngine.shared.tempo
         
         viewControllers = [
             SequencerViewController(),
@@ -147,7 +152,7 @@ class ContainerViewController: UIViewController {
     /**
         Shake gesture behavior. Used for clearing sequencer state
     */
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             AudioEngine.shared.sequencer.clear()
         }
@@ -188,5 +193,11 @@ extension ContainerViewController: AudioEngineDelegate {
 
     func didUpdateTempo(_ tempo: Double) {
         tempoLabel.text = String(format: "%.1f", tempo)
+    }
+}
+
+extension ContainerViewController: CustomSliderDelegate {
+    func valueDidChange(newValue: Double, tag: Int) {
+        AudioEngine.shared.tempo = newValue
     }
 }

@@ -16,6 +16,9 @@
 		420758192199440600104096 /* SynthFXTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420758182199440600104096 /* SynthFXTableViewCell.xib */; };
 		4207581B219BFF6B00104096 /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4207581A219BFF6B00104096 /* Synth.swift */; };
 		42315C8F20BB7C9C00E03D00 /* EventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42315C8E20BB7C9C00E03D00 /* EventHelper.swift */; };
+		425116B621A201D4009AED3F /* FXEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425116B521A201D4009AED3F /* FXEngine.swift */; };
+		425116B821A209D1009AED3F /* FXPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425116B721A209D1009AED3F /* FXPresenter.swift */; };
+		425116BA21A23E71009AED3F /* CancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425116B921A23E71009AED3F /* CancelableScrollView.swift */; };
 		425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C7A1420956DE200F486DB /* AppDelegate.swift */; };
 		425C7A1A20956DE200F486DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1820956DE200F486DB /* Main.storyboard */; };
 		425C7A1C20956DE400F486DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425C7A1B20956DE400F486DB /* Assets.xcassets */; };
@@ -40,8 +43,8 @@
 		42DAE594209FA7A600E525DE /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE593209FA7A600E525DE /* AudioEngine.swift */; };
 		42DAE598209FE05800E525DE /* stop.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE597209FE05800E525DE /* stop.svg */; };
 		42DAE59C209FEFFF00E525DE /* play.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE59B209FEFFF00E525DE /* play.svg */; };
-		42DAE59E209FF1D900E525DE /* TempoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE59D209FF1D900E525DE /* TempoSlider.swift */; };
-		42DAE5A0209FF1E300E525DE /* TempoSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE59F209FF1E300E525DE /* TempoSlider.xib */; };
+		42DAE59E209FF1D900E525DE /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE59D209FF1D900E525DE /* CustomSlider.swift */; };
+		42DAE5A0209FF1E300E525DE /* CustomSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE59F209FF1E300E525DE /* CustomSlider.xib */; };
 		42DAE5A2209FF1FA00E525DE /* MeasureMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */; };
 		42DAE5A4209FF20B00E525DE /* MeasureMeter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */; };
 		42DAE5A6209FFE3C00E525DE /* SequencerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAE5A5209FFE3C00E525DE /* SequencerCell.swift */; };
@@ -61,6 +64,9 @@
 		420758182199440600104096 /* SynthFXTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynthFXTableViewCell.xib; sourceTree = "<group>"; };
 		4207581A219BFF6B00104096 /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
 		42315C8E20BB7C9C00E03D00 /* EventHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHelper.swift; sourceTree = "<group>"; };
+		425116B521A201D4009AED3F /* FXEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXEngine.swift; sourceTree = "<group>"; };
+		425116B721A209D1009AED3F /* FXPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FXPresenter.swift; sourceTree = "<group>"; };
+		425116B921A23E71009AED3F /* CancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelableScrollView.swift; sourceTree = "<group>"; };
 		425C7A1120956DE200F486DB /* SimpleSequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425C7A1420956DE200F486DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		425C7A1920956DE200F486DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,8 +93,8 @@
 		42DAE593209FA7A600E525DE /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		42DAE597209FE05800E525DE /* stop.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop.svg; sourceTree = "<group>"; };
 		42DAE59B209FEFFF00E525DE /* play.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = play.svg; sourceTree = "<group>"; };
-		42DAE59D209FF1D900E525DE /* TempoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoSlider.swift; sourceTree = "<group>"; };
-		42DAE59F209FF1E300E525DE /* TempoSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempoSlider.xib; sourceTree = "<group>"; };
+		42DAE59D209FF1D900E525DE /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		42DAE59F209FF1E300E525DE /* CustomSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSlider.xib; sourceTree = "<group>"; };
 		42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureMeter.swift; sourceTree = "<group>"; };
 		42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureMeter.xib; sourceTree = "<group>"; };
 		42DAE5A5209FFE3C00E525DE /* SequencerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerCell.swift; sourceTree = "<group>"; };
@@ -172,8 +178,8 @@
 				42DAE5A7209FFE4B00E525DE /* SequencerCell.xib */,
 				425C7A2F209572D500F486DB /* SequencerView.swift */,
 				425C7A31209F6E3300F486DB /* SequencerView.xib */,
-				42DAE59D209FF1D900E525DE /* TempoSlider.swift */,
-				42DAE59F209FF1E300E525DE /* TempoSlider.xib */,
+				42DAE59D209FF1D900E525DE /* CustomSlider.swift */,
+				42DAE59F209FF1E300E525DE /* CustomSlider.xib */,
 				42DAE5A1209FF1FA00E525DE /* MeasureMeter.swift */,
 				42DAE5A3209FF20A00E525DE /* MeasureMeter.xib */,
 				4274A266219414A100AB67B2 /* SequencerViewLayout.swift */,
@@ -183,6 +189,7 @@
 				420758102197C68500104096 /* SynthFXView.xib */,
 				42075816219943F300104096 /* SynthFXTableViewCell.swift */,
 				420758182199440600104096 /* SynthFXTableViewCell.xib */,
+				425116B921A23E71009AED3F /* CancelableScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +222,8 @@
 				42DAE5AD20A3D98500E525DE /* PartialIndexPath.swift */,
 				429B528320A911C90032347A /* Note.swift */,
 				4207581A219BFF6B00104096 /* Synth.swift */,
+				425116B521A201D4009AED3F /* FXEngine.swift */,
+				425116B721A209D1009AED3F /* FXPresenter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +279,12 @@
 				TargetAttributes = {
 					425C7A1020956DE200F486DB = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -297,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				420758112197C68500104096 /* SynthFXView.xib in Resources */,
-				42DAE5A0209FF1E300E525DE /* TempoSlider.xib in Resources */,
+				42DAE5A0209FF1E300E525DE /* CustomSlider.xib in Resources */,
 				425C7A32209F6E3300F486DB /* SequencerView.xib in Resources */,
 				425C7A1F20956DE400F486DB /* LaunchScreen.storyboard in Resources */,
 				425C7A34209F730000F486DB /* SequencerViewController.xib in Resources */,
@@ -376,12 +391,15 @@
 				4207580F2197C67500104096 /* SynthFXView.swift in Sources */,
 				425C7A2C2095709000F486DB /* ContainerViewController.swift in Sources */,
 				4207581B219BFF6B00104096 /* Synth.swift in Sources */,
+				425116B821A209D1009AED3F /* FXPresenter.swift in Sources */,
 				42DAE5AC20A3D17500E525DE /* SequenceEvent.swift in Sources */,
 				4207580D2197C66600104096 /* SynthADSRView.swift in Sources */,
+				425116B621A201D4009AED3F /* FXEngine.swift in Sources */,
 				42DAE5A2209FF1FA00E525DE /* MeasureMeter.swift in Sources */,
 				425C7A36209F7F9A00F486DB /* SynthViewController.swift in Sources */,
-				42DAE59E209FF1D900E525DE /* TempoSlider.swift in Sources */,
+				42DAE59E209FF1D900E525DE /* CustomSlider.swift in Sources */,
 				425C7A3C209F7FB400F486DB /* HelpViewController.swift in Sources */,
+				425116BA21A23E71009AED3F /* CancelableScrollView.swift in Sources */,
 				42315C8F20BB7C9C00E03D00 /* EventHelper.swift in Sources */,
 				42DAE5AA20A3D01400E525DE /* Sequencer.swift in Sources */,
 				425C7A1520956DE200F486DB /* AppDelegate.swift in Sources */,
@@ -535,12 +553,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SimpleSequencer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -552,12 +571,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimpleSequencer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

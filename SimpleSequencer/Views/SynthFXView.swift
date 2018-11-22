@@ -37,22 +37,31 @@ class SynthFXView: UIView {
         view.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         tableView.tableFooterView = nil
-        tableView.register(SynthFXTableViewCell.self, forCellReuseIdentifier: "SynthFXTableViewCell")
+        tableView.separatorStyle = .none
+//        tableView.register(SynthFXTableViewCell.self, forCellReuseIdentifier: "SynthFXTableViewCell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "SynthFXTableViewCell")
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
+
 extension SynthFXView: UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+//        return FXEngine.numberOfFX
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SynthFXTableViewCell", for: indexPath)
+        cell.textLabel?.text = "test"
+//        FXPresenter.present(fxCell: cell, for: indexPath)
         return cell
     }
 }

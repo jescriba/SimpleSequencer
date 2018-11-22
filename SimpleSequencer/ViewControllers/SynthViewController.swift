@@ -16,7 +16,7 @@ import UIKit
         - FX settings like reverb, delay, etc...
  */
 class SynthViewController: UIViewController {
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView: CancelableScrollView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -36,7 +36,6 @@ class SynthViewController: UIViewController {
     func commonInit() {
         scrollView.isPagingEnabled = true
         scrollView.delegate = self
-        view.addGestureRecognizer(scrollView.panGestureRecognizer)
         addContentPages()
         pageControl.addTarget(self, action: #selector(didChangePage), for: .valueChanged)
         pageControl.currentPage = 0
@@ -47,6 +46,8 @@ class SynthViewController: UIViewController {
         // Programmatically setup the scrollview's content pages
         let ADSRView = SynthADSRView()
         let fxView = SynthFXView()
+        scrollView.viewsShouldntCancelTouches.append(ADSRView)
+        scrollView.viewsShouldntCancelTouches.append(fxView)
         ADSRView.translatesAutoresizingMaskIntoConstraints = false
         fxView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -78,11 +79,5 @@ class SynthViewController: UIViewController {
 extension SynthViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.frame.width)
-    }
-}
-
-extension SynthViewController: UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
     }
 }

@@ -26,6 +26,10 @@ extension UIColor {
     static let customLightBlue = UIColor(red:0.82, green:0.93, blue:0.93, alpha:1.0) // #D2EDED Background ADSR
     static let customBlueGreen = UIColor(red:0.00, green:0.42, blue:0.42, alpha:1.0) // #006A6A used in attack
     static let customLightBlueGreen = UIColor(red:0.00, green:0.69, blue:0.69, alpha:1.0) // #00AFAF Used in decary
+    static let tempoSliderPrimary = UIColor(red:0.53, green:0.18, blue:0.38, alpha:1.0) // #882D60
+    static let tempoSliderSecondary = UIColor(red:0.75, green:0.47, blue:0.63, alpha:1.0) // #C077A0
+    static let fxSliderPrimary = UIColor(red:0.00, green:0.67, blue:0.67, alpha:1.0) // FX slider primary #00AAAA
+    static let fxSliderSecondary = UIColor(red:0.00, green:0.35, blue:0.35, alpha:1.0) // FX slider secondary #005858
 }
 
 extension UIImage {

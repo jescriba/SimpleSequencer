@@ -15,7 +15,5 @@ class Synth: NSObject {
     
     override init() {
         super.init()
-        
-        // TODO
     }
 }

@@ -25,7 +25,9 @@ class AudioEngine: NSObject {
     static let minTempo: Double = 40
     static let shared = AudioEngine()
     var delegates = [AudioEngineDelegate?]()
+    let fxEngine = FXEngine()
     let mixer = AKMixer()
+    let synth = Synth()
     let sequencer = Sequencer()
     var tempo: Double = 100 {
         didSet {
@@ -50,27 +52,26 @@ class AudioEngine: NSObject {
         
         // TODO allow multiple input types to utilize sequencer
         sequencer.setupTracks()
-        
-        let audioSession = AVAudioSession.sharedInstance()
-        _ = try? audioSession.setActive(true)
-        _ = try? AKSettings.setSession(category: .playAndRecord, with: .mixWithOthers)
-        
+        configureOutput()
+    }
+    
+    func configureOutput() {
+        sequencer.setMidiOutput(synth.oscillatorBank)
+        // TODO allow for varying lengths
+        sequencer.setLength()
+        fxEngine.configureAudioSource(with: sequencer.midiNode)
+        fxEngine.mixer >>> mixer
         AudioKit.output = mixer
-        try? AudioKit.start()
-//
-//        // TODO Global effects?
-//        [drums.mixer, keyboard.mixer, microphone.mixer] >>> instrumentMixer
-//
-//        // Set up recorder and player
-//        recorder = try? AKNodeRecorder(node: mixer)
-//        if let file = recorder?.audioFile {
-//            player = try? AKAudioPlayer(file: file)
-//            player?.looping = true
-//        }
-//
-//        [instrumentMixer, AKMixer(player)] >>> mixer
-//        AudioKit.output = mixer
-//        try? AudioKit.start()
-//
+
+        do {
+            AKSettings.audioInputEnabled = true
+            AKSettings.defaultToSpeaker = true
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setActive(true)
+            try AKSettings.setSession(category: .playback, with: .mixWithOthers)
+            try AudioKit.start()
+        } catch {
+            print(error)
+        }
     }
 }
